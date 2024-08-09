@@ -89,7 +89,6 @@
             .then(response => response.json())
             .then(data => {
                 loadMarkers(data);
-                // Add the default layer to the map after markers are loaded
                 map.addLayer(alle_lag);
             })
             .catch(error => {
