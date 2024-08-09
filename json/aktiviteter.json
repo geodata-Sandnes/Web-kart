@@ -444,8 +444,8 @@
             "attributes": {
                 "Navn": "Sandnes Idrettspark Tennis",
                 "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/tennisanlegg/",
-                "Gatenavn": "*",
-                "Husnummer": null,
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "46",
                 "Bokstav": null,
                 "Type": 904,
                 "Eierform": null
@@ -697,23 +697,6 @@
         },
         {
             "attributes": {
-                "Navn": "Flomlysbanen",
-                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
-                "Gatenavn": "Jønningsheiveien",
-                "Husnummer": "42",
-                "Bokstav": null,
-                "Type": 100,
-                "Eierform": null
-            },
-            "geometry": {
-                "x": -33730.942411347525,
-                "y": 6561464.27705311,
-                "latitude": 58.8592554299447,
-                "longitude": 5.728807866696573
-            }
-        },
-        {
-            "attributes": {
                 "Navn": "Hanabanen",
                 "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
                 "Gatenavn": "Frøyerveien",
@@ -767,8 +750,8 @@
             "attributes": {
                 "Navn": "TS-kunsten flomlysbane",
                 "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
-                "Gatenavn": "*",
-                "Husnummer": null,
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "46",
                 "Bokstav": null,
                 "Type": 101,
                 "Eierform": null
@@ -1294,7 +1277,7 @@
             "attributes": {
                 "Navn": "Grusbane mini Flomlysbanen",
                 "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
-                "Gatenavn": "\"Jønningsheiveien",
+                "Gatenavn": "Jønningsheiveien",
                 "Husnummer": "42",
                 "Bokstav": null,
                 "Type": 101,
@@ -1413,8 +1396,8 @@
             "attributes": {
                 "Navn": "Sandvolleybane i Sandvedparken",
                 "Url": "*",
-                "Gatenavn": "*",
-                "Husnummer": null,
+                "Gatenavn": "Kvellurveien",
+                "Husnummer": "23",
                 "Bokstav": null,
                 "Type": 911,
                 "Eierform": null
@@ -1430,8 +1413,8 @@
             "attributes": {
                 "Navn": "Discgolf i Varatunparken",
                 "Url": "https://www.sdgk.no/klubben",
-                "Gatenavn": "*",
-                "Husnummer": null,
+                "Gatenavn": "Dyre Vaas vei",
+                "Husnummer": "61",
                 "Bokstav": null,
                 "Type": 901,
                 "Eierform": null
@@ -1464,8 +1447,8 @@
             "attributes": {
                 "Navn": "Treningspark i Sandvedparken",
                 "Url": "*",
-                "Gatenavn": "*",
-                "Husnummer": null,
+                "Gatenavn": "Kvellurveien",
+                "Husnummer": "23",
                 "Bokstav": null,
                 "Type": 912,
                 "Eierform": null
