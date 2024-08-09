@@ -1,0 +1,1481 @@
+{
+    "objectIdFieldName": "OBJECTID",
+    "globalIdFieldName": "",
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+        "wkid": 25833,
+        "latestWkid": 25833
+    },
+    "fields": [
+        {
+            "name": "Navn",
+            "alias": "Navn",
+            "type": "esriFieldTypeString",
+            "length": 50
+        },
+        {
+            "name": "Url",
+            "alias": "Url",
+            "type": "esriFieldTypeString",
+            "length": 500
+        },
+        {
+            "name": "Gatenavn",
+            "alias": "Gatenavn",
+            "type": "esriFieldTypeString",
+            "length": 30
+        },
+        {
+            "name": "Husnummer",
+            "alias": "Husnummer",
+            "type": "esriFieldTypeString",
+            "length": 5
+        },
+        {
+            "name": "Bokstav",
+            "alias": "Bokstav",
+            "type": "esriFieldTypeString",
+            "length": 5
+        },
+        {
+            "name": "Type",
+            "alias": "Type",
+            "type": "esriFieldTypeInteger"
+        },
+        {
+            "name": "Eierform",
+            "alias": "Eierform",
+            "type": "esriFieldTypeInteger"
+        }
+    ],
+    "features": [
+        {
+            "attributes": {
+                "Navn": "Kleivanehallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Skaraveien",
+                "Husnummer": "100",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -31463.05965089437,
+                "y": 6558765.9140453935,
+                "latitude": 58.83813842872422,
+                "longitude": 5.774030452660134
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Forsand Svømmehall",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/svommehaller/forsand-svommehall/",
+                "Gatenavn": "Espedalsvegen",
+                "Husnummer": "156",
+                "Bokstav": null,
+                "Type": 301,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -9986.79516264965,
+                "y": 6562446.984553335,
+                "latitude": 58.89674509026206,
+                "longitude": 6.133186265604819
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Figgjohallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Figgenveien",
+                "Husnummer": "17",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -30262.326918365783,
+                "y": 6552871.568029635,
+                "latitude": 58.78736076118562,
+                "longitude": 5.808519330546635
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Kvelven Leirduebane",
+                "Url": "https://www.njff.no/rogaland/forsand/jaktskyting",
+                "Gatenavn": "Kvelven",
+                "Husnummer": "135",
+                "Bokstav": null,
+                "Type": 909,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -8980.560221195163,
+                "y": 6560942.439741875,
+                "latitude": 58.88458547076296,
+                "longitude": 6.153878075682812
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Giskehallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/svommehaller/giske-svommehall/",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "47",
+                "Bokstav": null,
+                "Type": 301,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33902.45195463195,
+                "y": 6561418.7626809385,
+                "latitude": 58.85863958862578,
+                "longitude": 5.725982446561149
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Julebygdhallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Heigreveien",
+                "Husnummer": "403",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -38208.038137997035,
+                "y": 6558982.4575222405,
+                "latitude": 58.83169553238743,
+                "longitude": 5.658201296527258
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Riskahallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/svommehaller/riska-svommehall/",
+                "Gatenavn": "Nøtteskjellveien",
+                "Husnummer": "9",
+                "Bokstav": null,
+                "Type": 301,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -26036.290167292347,
+                "y": 6568030.743963893,
+                "latitude": 58.92693956715798,
+                "longitude": 5.844982488858776
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Varatun helsebassenget",
+                "Url": "*",
+                "Gatenavn": "Postveien",
+                "Husnummer": "181",
+                "Bokstav": null,
+                "Type": 300,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33096.58653333865,
+                "y": 6562331.043549095,
+                "latitude": 58.867723326511516,
+                "longitude": 5.737590927684891
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sviland grusbane treningsfelt",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Espelandsveien",
+                "Husnummer": "364",
+                "Bokstav": null,
+                "Type": 101,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -29054.455959446146,
+                "y": 6556429.517351337,
+                "latitude": 58.820385721985495,
+                "longitude": 5.820747823790256
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Forsand kulturhus",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Espedalsvegen",
+                "Husnummer": "158",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -9945.573347027297,
+                "y": 6562422.625122791,
+                "latitude": 58.89657779608573,
+                "longitude": 6.133948856342897
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sørbøhallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Haugen",
+                "Husnummer": "27",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34173.022185030975,
+                "y": 6557787.267855479,
+                "latitude": 58.82611689537491,
+                "longitude": 5.730031284647305
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Vågen idrettshall",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Holbergs gate",
+                "Husnummer": "23",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33132.15382184426,
+                "y": 6560441.082225224,
+                "latitude": 58.850927205928315,
+                "longitude": 5.741494955604425
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Bogafjell Skatepark",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/skateanlegg/",
+                "Gatenavn": "Lyngholen",
+                "Husnummer": "7",
+                "Bokstav": null,
+                "Type": 906,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33579.82368597621,
+                "y": 6557065.794083596,
+                "latitude": 58.820455746196764,
+                "longitude": 5.741890548545666
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Stall Friheten",
+                "Url": "https://www.stallfriheten.no/",
+                "Gatenavn": "Helgelandsveien",
+                "Husnummer": "48",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32489.68284344976,
+                "y": 6555823.752364202,
+                "latitude": 58.81079209195502,
+                "longitude": 5.7634753407026125
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lura Skatepark",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/skateanlegg/",
+                "Gatenavn": "Prinsens vei",
+                "Husnummer": "14",
+                "Bokstav": "A",
+                "Type": 906,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32889.63937706954,
+                "y": 6563912.160812938,
+                "latitude": 58.881993907722766,
+                "longitude": 5.737354874041945
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Villingur Islandshest Forening",
+                "Url": "https://www.villingur.com/",
+                "Gatenavn": "Espedalsvegen",
+                "Husnummer": "85",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -10969.372243559512,
+                "y": 6562293.509152884,
+                "latitude": 58.89421758037798,
+                "longitude": 6.116691492186294
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Austrått svømmehall",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/svommehaller/austratt-svommehall/",
+                "Gatenavn": "Kjervestadveien",
+                "Husnummer": "2",
+                "Bokstav": null,
+                "Type": 301,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32499.750004230067,
+                "y": 6559405.067886254,
+                "latitude": 58.84252544654545,
+                "longitude": 5.754781249094489
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Hanahallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Hanamyrveien",
+                "Husnummer": "19",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -31185.785425511538,
+                "y": 6560636.972548372,
+                "latitude": 58.855066332829395,
+                "longitude": 5.774324453889719
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Austrått svømmehall",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/svommehaller/austratt-svommehall/",
+                "Gatenavn": "Kjervestadveien",
+                "Husnummer": "2",
+                "Bokstav": null,
+                "Type": 300,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32526.88879647071,
+                "y": 6559386.224410532,
+                "latitude": 58.842324905245206,
+                "longitude": 5.754362025644661
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Forsand Svømmehall",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/svommehaller/forsand-svommehall/",
+                "Gatenavn": "Espedalsvegen",
+                "Husnummer": "156",
+                "Bokstav": null,
+                "Type": 300,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -9974.337125635066,
+                "y": 6562442.991323792,
+                "latitude": 58.896724422772685,
+                "longitude": 6.133409020934586
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes Arena",
+                "Url": "https://www.sandnesarena.no/",
+                "Gatenavn": "Melsheiveien",
+                "Husnummer": "50",
+                "Bokstav": null,
+                "Type": 903,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -30976.702162716654,
+                "y": 6557401.107844372,
+                "latitude": 58.82663855780014,
+                "longitude": 5.7855872437555025
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Vatne Skytebane",
+                "Url": "*",
+                "Gatenavn": "Skytebaneveien",
+                "Husnummer": "50",
+                "Bokstav": null,
+                "Type": 909,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -30335.717402972165,
+                "y": 6561544.394355166,
+                "latitude": 58.86415732111095,
+                "longitude": 5.786713004789603
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "NOP Vatne",
+                "Url": "https://sites.google.com/site/nopvatne",
+                "Gatenavn": "Svartemyrveien",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 909,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -29361.29533841624,
+                "y": 6560714.716476603,
+                "latitude": 58.858000161429544,
+                "longitude": 5.805357086202829
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes Idrettspark Tennis",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/tennisanlegg/",
+                "Gatenavn": "*",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 904,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33775.84487655223,
+                "y": 6561520.062684954,
+                "latitude": 58.85969427375189,
+                "longitude": 5.727906292970387
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Soma rideskole",
+                "Url": "https://soma-rideskole.blogspot.com/p/forside.html",
+                "Gatenavn": "Sandnesveien",
+                "Husnummer": "194",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -36026.120951054734,
+                "y": 6562775.030394319,
+                "latitude": 58.868023632017916,
+                "longitude": 5.686397390489013
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lutsi Hestesenter",
+                "Url": "https://www.facebook.com/groups/676838313184922/",
+                "Gatenavn": "Furenesveien",
+                "Husnummer": "5",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -28585.278780989,
+                "y": 6561743.427557462,
+                "latitude": 58.86807285323677,
+                "longitude": 5.81620027787501
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Riska hestesenter",
+                "Url": "https://www.facebook.com/RiskaRideklubb/",
+                "Gatenavn": "Riskaveien",
+                "Husnummer": "110",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -26773.150098848506,
+                "y": 6567465.359260835,
+                "latitude": 58.92102443550241,
+                "longitude": 5.833687310238136
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes sykkel- og aktivitetsgård",
+                "Url": "https://www.tryggtrafikk.no/fylkeskontorer/trygg-trafikk-rogaland/sandnes-sykkel-og-aktivitetsgard/",
+                "Gatenavn": "Dyre Vaas vei",
+                "Husnummer": "61",
+                "Bokstav": null,
+                "Type": 900,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33779.92436106189,
+                "y": 6562169.091795552,
+                "latitude": 58.86544183868948,
+                "longitude": 5.726284580903696
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Fossanmoen Islandshestsenter",
+                "Url": "http://www.fossanmoen.no/",
+                "Gatenavn": "Espedalsvegen",
+                "Husnummer": "174",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -9765.604066966509,
+                "y": 6562383.900487879,
+                "latitude": 58.896447431865255,
+                "longitude": 6.137123336003143
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes og Jæren rideklubb",
+                "Url": "https://sjr.no/",
+                "Gatenavn": "Kvernelandsveien",
+                "Husnummer": "130",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34395.942640059046,
+                "y": 6555179.838183011,
+                "latitude": 58.802729840792296,
+                "longitude": 5.7324424875358355
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Tryggvi Islandshestgård",
+                "Url": "https://tryggvi.no/hester/",
+                "Gatenavn": "Vaglemoen",
+                "Husnummer": "12",
+                "Bokstav": null,
+                "Type": 905,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -35035.46980796754,
+                "y": 6555543.69892344,
+                "latitude": 58.80516319363569,
+                "longitude": 5.720650545435056
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes Pistolklubb",
+                "Url": "https://sandnes-pk.no/",
+                "Gatenavn": "Gamle Åslandsveien",
+                "Husnummer": "63",
+                "Bokstav": null,
+                "Type": 909,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32290.098793767393,
+                "y": 6554054.111032265,
+                "latitude": 58.79535108128286,
+                "longitude": 5.771088180630184
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Ruten Skatepark",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/skateanlegg/",
+                "Gatenavn": "Vågsgata",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 906,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33297.219413862214,
+                "y": 6560695.521393528,
+                "latitude": 58.85297833165121,
+                "longitude": 5.738064120605891
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Austrått Skatepark",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/skateanlegg/",
+                "Gatenavn": "Iglemyrveien",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 906,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32347.810536593082,
+                "y": 6559475.502665459,
+                "latitude": 58.84333737491977,
+                "longitude": 5.757211914015577
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Austrått Skatepark",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/skateanlegg/",
+                "Gatenavn": "Iglemyrveien",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 906,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32790.66677160165,
+                "y": 6564367.04243427,
+                "latitude": 58.88614830540172,
+                "longitude": 5.737962028759044
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes BMX-bane",
+                "Url": "https://www.sandnesbmx.no/",
+                "Gatenavn": "Kvålkroken",
+                "Husnummer": "6",
+                "Bokstav": null,
+                "Type": 902,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -35223.045031670365,
+                "y": 6556867.096443595,
+                "latitude": 58.81666033782207,
+                "longitude": 5.714284750134167
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sviland BMX-bane",
+                "Url": "https://www.svilandbmx.no/",
+                "Gatenavn": "Espelandsveien",
+                "Husnummer": "360",
+                "Bokstav": null,
+                "Type": 902,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -28946.835893881274,
+                "y": 6556203.635784602,
+                "latitude": 58.8185149808374,
+                "longitude": 5.823121144797292
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Pumptrackbanen Sandvedparken",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/andre-idrettsanlegg/Sandvedparkenpumptrackbane/",
+                "Gatenavn": "Kvellurveien",
+                "Husnummer": "23",
+                "Bokstav": null,
+                "Type": 908,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33890.84918909136,
+                "y": 6559475.760301886,
+                "latitude": 58.841432211469744,
+                "longitude": 5.730823926240621
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Flomlysbanen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "42",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33730.942411347525,
+                "y": 6561464.27705311,
+                "latitude": 58.8592554299447,
+                "longitude": 5.728807866696573
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Hanabanen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Frøyerveien",
+                "Husnummer": "16",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32115.610105169122,
+                "y": 6560902.100620948,
+                "latitude": 58.85626967725497,
+                "longitude": 5.757785372064994
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Bogafjell kunstgress",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Lyngholen",
+                "Husnummer": "5",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33501.125117173884,
+                "y": 6557030.510342539,
+                "latitude": 58.8202402723604,
+                "longitude": 5.743319594932069
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lura kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Prinsens vei",
+                "Husnummer": "14",
+                "Bokstav": "A",
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32933.59194278915,
+                "y": 6563998.669214816,
+                "latitude": 58.882706290426626,
+                "longitude": 5.736395595953916
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "TS-kunsten flomlysbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "*",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 101,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33726.497303423006,
+                "y": 6561444.327827439,
+                "latitude": 58.85908411532949,
+                "longitude": 5.728931601346696
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes stadion",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/friidrettsanlegg/",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "44",
+                "Bokstav": null,
+                "Type": 907,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33903.09103489143,
+                "y": 6561501.686918076,
+                "latitude": 58.85937378720023,
+                "longitude": 5.725773232538214
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Byrkjeland idrettsplass",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Espedalsvegen",
+                "Husnummer": "865",
+                "Bokstav": null,
+                "Type": 102,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -7493.297487663047,
+                "y": 6559740.555757724,
+                "latitude": 58.87567527853475,
+                "longitude": 6.182109570367024
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Øygard ungdomsskole kunstgress",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Eddaveien",
+                "Husnummer": "25",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -31650.09402405366,
+                "y": 6560502.597563441,
+                "latitude": 58.85330275962948,
+                "longitude": 5.766700763927999
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Forsand kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Espedalsvegen",
+                "Husnummer": "156",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -10030.457213988819,
+                "y": 6562641.1303173285,
+                "latitude": 58.898416066957125,
+                "longitude": 6.131992898948425
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Malmheim gressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Heigreveien",
+                "Husnummer": "403",
+                "Bokstav": null,
+                "Type": 102,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -38103.23465384822,
+                "y": 6559019.408095946,
+                "latitude": 58.83215369736955,
+                "longitude": 5.659903667976237
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sviland kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Espelandsveien",
+                "Husnummer": "364",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -28985.47390059929,
+                "y": 6556512.940103417,
+                "latitude": 58.82120988395791,
+                "longitude": 5.821729862545203
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Ganddal kunstgressbane 1 og 2",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Jærveien",
+                "Husnummer": "276",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -35653.290224346914,
+                "y": 6556918.661497111,
+                "latitude": 58.81658374573694,
+                "longitude": 5.706810028764315
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Høle kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Apalstøveien",
+                "Husnummer": "64",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -16637.262465245207,
+                "y": 6563258.451619905,
+                "latitude": 58.89601069083828,
+                "longitude": 6.017303883488495
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandved kunstgress",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Asheimveien",
+                "Husnummer": "45",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34763.79864507343,
+                "y": 6559847.175405483,
+                "latitude": 58.843642642736164,
+                "longitude": 5.715008725844877
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Øster Hus Arena",
+                "Url": "https://www.sandnesulf.no/om-stadion/nye-sandnes-stadion",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "40",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34010.163884071284,
+                "y": 6561759.711557168,
+                "latitude": 58.861528091908376,
+                "longitude": 5.723324250067971
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Bogafjell kunstgress treningsbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Lyngholen",
+                "Husnummer": "5",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33489.5771489779,
+                "y": 6557337.588963042,
+                "latitude": 58.82297645393919,
+                "longitude": 5.7427851261825005
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Hana skole kunstgress",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Hanamyrveien",
+                "Husnummer": "21",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -31030.61754097417,
+                "y": 6560678.330738216,
+                "latitude": 58.8556241484979,
+                "longitude": 5.77688084441867
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Kleivane kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Skaraveie",
+                "Husnummer": "100",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -31459.159032134106,
+                "y": 6558686.192229445,
+                "latitude": 58.837436529447544,
+                "longitude": 5.774286634719666
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lura kunstgress treningsbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Prinsens vei",
+                "Husnummer": "14",
+                "Bokstav": "A",
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32902.182363948436,
+                "y": 6564104.59499831,
+                "latitude": 58.88368405239886,
+                "longitude": 5.736680117445098
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Riska kunstgress hovedbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Borgveien",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -26285.494079694734,
+                "y": 6567144.625713796,
+                "latitude": 58.91877798715836,
+                "longitude": 5.842807096364754
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Riska kunstgress treningsfelt",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Borgveien",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -26226.227451525745,
+                "y": 6567107.132633947,
+                "latitude": 58.9185181046715,
+                "longitude": 5.843911860868684
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandved skole kunstgress",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Gamle Asheimvei",
+                "Husnummer": "9",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34803.92615017062,
+                "y": 6559509.37444203,
+                "latitude": 58.840598906130374,
+                "longitude": 5.715130683560433
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Aspervika skole kunstgress",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Asperholen",
+                "Husnummer": "89",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -31636.787201208528,
+                "y": 6561802.674177907,
+                "latitude": 58.86484355810151,
+                "longitude": 5.7638329075343355
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Figgjo kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Holane",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -30050.25501533691,
+                "y": 6552890.657643626,
+                "latitude": 58.7877901480295,
+                "longitude": 5.812095811415846
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Ganddal bydelsbane kunstgress",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Olsokveien",
+                "Husnummer": "1",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -35490.66061508842,
+                "y": 6557484.265789202,
+                "latitude": 58.8217984619625,
+                "longitude": 5.7082360476449825
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes stadion kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "42",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33988.0523077579,
+                "y": 6561598.39948575,
+                "latitude": 58.86012572680658,
+                "longitude": 5.724088388596207
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Høle gressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Apalstøveien",
+                "Husnummer": "64",
+                "Bokstav": null,
+                "Type": 102,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -16733.92410628352,
+                "y": 6563299.634833924,
+                "latitude": 58.89625994262171,
+                "longitude": 6.015551497697447
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Iglemyr gressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Iglemyrveien",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 102,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32624.47620219481,
+                "y": 6559484.9892108785,
+                "latitude": 58.84307985451913,
+                "longitude": 5.752457820993135
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Iglemyr kunstgressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Iglemyrveien",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 100,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32875.51406779152,
+                "y": 6559475.45689737,
+                "latitude": 58.84268524401803,
+                "longitude": 5.748187423927531
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Giskebanen treningsfelt",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "44",
+                "Bokstav": null,
+                "Type": 102,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33864.12968893116,
+                "y": 6561707.67623044,
+                "latitude": 58.861247816557785,
+                "longitude": 5.725947248976578
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandved gressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Asheimveien",
+                "Husnummer": "45",
+                "Bokstav": null,
+                "Type": 102,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34879.85143889929,
+                "y": 6559824.273428998,
+                "latitude": 58.84329573755453,
+                "longitude": 5.71307902113696
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sviland gressbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Espelandsveien",
+                "Husnummer": "364",
+                "Bokstav": null,
+                "Type": 102,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -28990.178633839358,
+                "y": 6556367.900755601,
+                "latitude": 58.81991821923956,
+                "longitude": 5.8219921668711505
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Gymnasbanen grusbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "44",
+                "Bokstav": null,
+                "Type": 101,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33871.52824225766,
+                "y": 6561287.484366374,
+                "latitude": 58.857514320281446,
+                "longitude": 5.726825354044511
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Iglemyr grusbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Iglemyrveien",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 101,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32714.169806245365,
+                "y": 6559479.631489334,
+                "latitude": 58.84292157788759,
+                "longitude": 5.75093668500821
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lundehaugen grusbane",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "Haugen",
+                "Husnummer": "27",
+                "Bokstav": null,
+                "Type": 101,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34303.6209418365,
+                "y": 6557888.3238232955,
+                "latitude": 58.826850928482436,
+                "longitude": 5.727557794975566
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Grusbane mini Flomlysbanen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/fotballbaner/",
+                "Gatenavn": "\"Jønningsheiveien",
+                "Husnummer": "42",
+                "Bokstav": null,
+                "Type": 101,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33675.030513492995,
+                "y": 6561367.858069715,
+                "latitude": 58.85847005808316,
+                "longitude": 5.729994885463667
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Bogafjellhallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Lyngholen",
+                "Husnummer": "7",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33578.28399313835,
+                "y": 6556999.305889891,
+                "latitude": 58.81986830777915,
+                "longitude": 5.742075325734521
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandneshallen",
+                "Url": "https://varenergiarenasandneshallen.no/",
+                "Gatenavn": "Asheimveien",
+                "Husnummer": "45",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34827.86501821666,
+                "y": 6559728.641384308,
+                "latitude": 58.842512613581505,
+                "longitude": 5.714196793051281
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Austråtthallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Iglemyrveien",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32411.863544484717,
+                "y": 6559448.355434764,
+                "latitude": 58.843017663511645,
+                "longitude": 5.75618114215485
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Giskehallen 1 og 2",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Jønningsheiveien",
+                "Husnummer": "47",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33904.11654563167,
+                "y": 6561387.238580938,
+                "latitude": 58.85835811593716,
+                "longitude": 5.72602934363686
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lurahallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Prinsens vei",
+                "Husnummer": "14",
+                "Bokstav": "A",
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -32798.12059744622,
+                "y": 6563920.553181882,
+                "latitude": 58.882181545104835,
+                "longitude": 5.738901636650519
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Riskahallen",
+                "Url": "https://www.sandnes.kommune.no/sti/idrett-park-og-friluftsliv/idrettsanlegg/idrettshaller-gymsaler/",
+                "Gatenavn": "Nøtteskjellveien",
+                "Husnummer": "9",
+                "Bokstav": null,
+                "Type": 201,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -26031.01030370372,
+                "y": 6568011.133307712,
+                "latitude": 58.92677215511292,
+                "longitude": 5.845119443314652
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandvolleybane i Sandvedparken",
+                "Url": "*",
+                "Gatenavn": "*",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 911,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33854.70070332824,
+                "y": 6559751.67688897,
+                "latitude": 58.84392255844349,
+                "longitude": 5.730783106224294
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Discgolf i Varatunparken",
+                "Url": "https://www.sdgk.no/klubben",
+                "Gatenavn": "*",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 901,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33847.49010182649,
+                "y": 6562349.015997312,
+                "latitude": 58.86695286570285,
+                "longitude": 5.724698055294465
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandnes Golfpark",
+                "Url": "https://www.sandnesgolfklubb.no/",
+                "Gatenavn": "Bærheimveien",
+                "Husnummer": "39",
+                "Bokstav": null,
+                "Type": 910,
+                "Eierform": 2
+            },
+            "geometry": {
+                "x": -35664.48114205594,
+                "y": 6563109.496399367,
+                "latitude": 58.87143762287263,
+                "longitude": 5.691782443010467
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Treningspark i Sandvedparken",
+                "Url": "*",
+                "Gatenavn": "*",
+                "Husnummer": null,
+                "Bokstav": null,
+                "Type": 912,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -33957.77221377101,
+                "y": 6559382.61243491,
+                "latitude": 58.84052374475689,
+                "longitude": 5.729902033676638
+            }
+        }
+    ]
+}
