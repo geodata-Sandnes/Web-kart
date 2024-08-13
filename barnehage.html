@@ -72,7 +72,7 @@
                         <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.geometry.latitude},${plass.geometry.longitude}" target="_blank">Veibeskrivelse</a> <br>
                     `);
                     marker.data = plass;
-                    markers[plass.attributes.OBJECTID] = marker; // Lagre markøren med OBJECTID som nøkkel
+                    markers[plass.attributes.OBJECTID] = marker;
                     allCluster.addLayer(marker);
                     switch (plass.attributes.Filter) {
                         case 1:
