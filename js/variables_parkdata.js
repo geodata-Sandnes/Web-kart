@@ -1,10 +1,7 @@
 const jsonUrl = "https://geodata-Sandnes.github.io/Web-kart/json/p_plasser_info.json";
 const direct = "https://geodata-Sandnes.github.io/Web-kart/";
 const grunnkart = "https://services.geodataonline.no/arcgis/rest/services/Geocache_WMAS_WGS84/GeocacheBasis/MapServer/tile/{z}/{y}/{x}";
-//const grunnkart = "https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWF0aGlsZG8iLCJhIjoiY2lrdHZvMHdsMDAxMHdvbTR0MWZkY3FtaCJ9.u4bFYLBtEGNv4Qaa8Uaqzw";
-
 const attribution_tag = '©️ Geodata AS, Kartverket, Geovekst og kommunene, OpenStreetMap';
-
 const marker_svart = "css/images/icon/marker-icon_park_svart.png";
 const marker_blaa = "css/images/icon/marker-icon_park_blaa.png";
 const shadow = "css/images/marker-shadow.png";
