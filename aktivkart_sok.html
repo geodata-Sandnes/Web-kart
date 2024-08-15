@@ -120,7 +120,8 @@ var geocoder = L.Control.geocoder({
     placeholder:"Søk...",
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
-            "viewbox": bbox.toBBoxString()
+            "viewbox": bbox.toBBoxString(),
+            "bounded": 1
         }
     })
     })
