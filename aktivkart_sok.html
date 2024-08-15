@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <link href="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/style.css" rel="stylesheet">
 
-
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport-src.js"></script>
@@ -33,22 +32,21 @@
     <script src="js/variables_parkdata.js"></script>
     <script>
         maptilersdk.config.apiKey = "eQ1llFLMd4Gy0FanhV62";
-        console.log(testtekst)
         const map = L.map('map', {
-        maxZoom: 18,
-        minZoom: 8,
+            maxZoom: 18,
+            minZoom: 8,
         }).setView([58.8464, 5.7438], 9);
+
         const mtLayer = L.maptilerLayer({
-        style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
-      }).addTo(map);
+            style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
+        }).addTo(map);
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             alle_lag = L.layerGroup(),
             lade_lag = L.layerGroup(),
             hc_lag = L.layerGroup(),
             mc_lag = L.layerGroup(),
-            control = L.control.layers(null, null, { collapsed: true }),
-            i, a, title, marker;
+            control = L.control.layers(null, null, { collapsed: true });
 
         mcgLayerSupportGroup.addTo(map);
 
@@ -62,7 +60,7 @@
             });
         }
         load_mcmarker(mc);
-        
+
         function loadMarkers(data) {
             var markers = [];
             data.forEach(function (plass) {
@@ -89,8 +87,6 @@
             });
         }
 
-        var allMarkers = [];
-
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
@@ -108,19 +104,46 @@
         mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
         control.addBaseLayer(alle_lag, 'Alle plasser');
         control.addBaseLayer(lade_lag, 'Ladeplasser');
-        control.addBaseLayer(mc_lag, ' MC-parkering');
+        control.addBaseLayer(mc_lag, 'MC-parkering');
         control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
 
-
-        const gc = new maptilersdk.GeocodingControl({
-        apiKey: "eQ1llFLMd4Gy0FanhV62",
-        placeholder: "Søk...",
-        limit: 10,
-        position: 'top-left',
+        const geocoder = new maptilersdk.Geocoding({
+            apiKey: "eQ1llFLMd4Gy0FanhV62"
         });
-        gc.addTo(map);
+
+        const searchInput = L.control({position: 'topright'});
+
+        searchInput.onAdd = function(map) {
+            var div = L.DomUtil.create('div', 'search-box');
+            div.innerHTML = '<input type="text" id="search" placeholder="Søk..." style="padding: 5px; width: 200px;">';
+            return div;
+        };
+
+        searchInput.addTo(map);
+
+        document.getElementById('search').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const query = e.target.value;
+                geocoder.forward(query, { limit: 5 })
+                    .then(function(result) {
+                        const firstResult = result.features[0];
+                        if (firstResult) {
+                            const latlng = L.latLng(firstResult.geometry.coordinates[1], firstResult.geometry.coordinates[0]);
+                            map.setView(latlng, 14);
+                            L.marker(latlng).addTo(map)
+                                .bindPopup(firstResult.place_name)
+                                .openPopup();
+                        } else {
+                            alert("No results found.");
+                        }
+                    })
+                    .catch(function(error) {
+                        console.error('Geocoding error:', error);
+                    });
+            }
+        });
 
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
