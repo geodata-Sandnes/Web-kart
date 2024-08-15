@@ -109,42 +109,14 @@
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
 
-        const geocoder = new maptilersdk.Geocoding({
-            apiKey: "eQ1llFLMd4Gy0FanhV62"
+        const geocodingControl = new maptilersdk.GeocodingControl({
+            apiKey: "eQ1llFLMd4Gy0FanhV62",
+            placeholder: "Søk etter sted...",
+            limit: 5
         });
 
-        const searchInput = L.control({position: 'topright'});
-
-        searchInput.onAdd = function(map) {
-            var div = L.DomUtil.create('div', 'search-box');
-            div.innerHTML = '<input type="text" id="search" placeholder="Søk..." style="padding: 5px; width: 200px;">';
-            return div;
-        };
-
-        searchInput.addTo(map);
-
-        document.getElementById('search').addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {
-                const query = e.target.value;
-                geocoder.forward(query, { limit: 5 })
-                    .then(function(result) {
-                        const firstResult = result.features[0];
-                        if (firstResult) {
-                            const latlng = L.latLng(firstResult.geometry.coordinates[1], firstResult.geometry.coordinates[0]);
-                            map.setView(latlng, 14);
-                            L.marker(latlng).addTo(map)
-                                .bindPopup(firstResult.place_name)
-                                .openPopup();
-                        } else {
-                            alert("No results found.");
-                        }
-                    })
-                    .catch(function(error) {
-                        console.error('Geocoding error:', error);
-                    });
-            }
-        });
-
+        map.addControl(geocodingControl);
+        
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
 </body>
