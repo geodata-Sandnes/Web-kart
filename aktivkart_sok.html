@@ -113,7 +113,12 @@
 
         var geocoder = L.Control.geocoder({
             defaultMarkGeocode: false
-        }).addTo(map);
+        })
+            .on('markgeocode', function(e) {
+                var bbox = e.geocode.bbox;
+            map.fitBounds(poly.getBounds());
+        })
+        .addTo(map);
     </script>
 </body>
 </html>
