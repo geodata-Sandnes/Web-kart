@@ -34,8 +34,6 @@
     <script src="js/variables_parkdata.js"></script>
     <script>
         console.log(testtekst);
-        
-        // Opprett kartet
         const map = L.map('map', {
             maxZoom: 18,
             minZoom: 8,
@@ -52,11 +50,10 @@
             hc_lag = L.layerGroup(),
             mc_lag = L.layerGroup(),
             control = L.control.layers(null, null, { collapsed: false }),
+            activeLayer = alle_lag,
             i, a, title, marker;
 
         mcgLayerSupportGroup.addTo(map);
-
-        // Funksjon for å laste MC-parkering markører
         function load_mcmarker(mc) {
             mc.forEach(function(mcplass) {
                 var mcMarker = L.marker([mcplass[0], mcplass[1]], { icon: mcikon }).bindPopup(`
@@ -67,17 +64,11 @@
             });
         }
         load_mcmarker(mc);
-        
-        // Funksjon for å laste markører med properties for navn og adresse
         function loadMarkers(data) {
             var markers = [];
             data.forEach(function (plass) {
-                // Velg riktig ikon basert på parkeringstilbyderen
                 var icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
-                // Sjekk om adressen finnes, ellers bruk "Ingen"
                 var fylladresse = plass.aktivVersjon.adresse || "Ingen";
-                
-                // Opprett markøren med properties for name og address
                 var marker = L.marker([plass.breddegrad, plass.lengdegrad], {
                     icon: icon,
                     properties: {
@@ -97,27 +88,18 @@
                     <br>
                     <sup>Id: ${plass.id}</sup>
                 `);
-                
-                // Lagre data for tilgang senere
                 marker.data = plass;
-                
-                // Legg til markøren i alle_lag
                 markers.push(marker);
                 alle_lag.addLayer(marker);
-                
-                // Legg til markøren i lade_lag hvis det finnes ladeplasser
                 if (plass.aktivVersjon.antallLadeplasser > 0) {
                     lade_lag.addLayer(marker);
                 }
                 
-                // Legg til markøren i hc_lag hvis det finnes HC-plasser
                 if (plass.aktivVersjon.antallForflytningshemmede > 0) {
                     hc_lag.addLayer(marker);
                 }
             });
         }
-
-        // Fetch parkdata og last markørene
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
@@ -127,20 +109,21 @@
             .catch(error => {
                 console.error('Error fetching the JSON data:', error);
             });
-
-        // Opprett søkekontroll som søker i markørenes properties
         var searchControl = new L.Control.Search({
-            layer: alle_lag, // Laget med alle markører
-            propertyName: 'properties.name', // Vi søker på 'name' i 'properties'
+            layer: activeLayer,
+            propertyName: 'properties.name',
             marker: false,
             moveToLocation: function(latlng, title, map) {
-                map.setView(latlng, 16); // Flytt kartet til funnet markør
+                map.setView(latlng, 16);
             }
         });
 
-        map.addControl(searchControl);
+        map.on('baselayerchange', function(eventLayer) {
+        activeLayer = eventLayer.layer;
+        searchControl.setLayer(activeLayer);
+        });
 
-        // Legg til polygoner og kontroller
+        map.addControl(searchControl);
         polygon2.bindPopup("Parkering langs vei forbudt");
         polygon.bindPopup("Parkering langs vei forbudt");
         veiparkeringsforbud.addLayer(polygon);
