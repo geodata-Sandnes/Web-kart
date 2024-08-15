@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport-src.js"></script>
@@ -28,16 +30,15 @@
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
-        console.log(testtekst);
+        console.log(testtekst)
         const map = L.map('map', {
-            maxZoom: 18,
-            minZoom: 8,
+        maxZoom: 18,
+        minZoom: 8,
         }).setView([58.8464, 5.7438], 9);
-
         const mtLayer = L.maptilerLayer({
-            apiKey: "eQ1llFLMd4Gy0FanhV62",
-            style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
-        }).addTo(map);
+        apiKey: "eQ1llFLMd4Gy0FanhV62",
+        style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
+      }).addTo(map);
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             alle_lag = L.layerGroup(),
@@ -110,48 +111,32 @@
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
 
-        var bbox = L.latLngBounds([
-            [58.76968, 5.58000],
-            [59.23730, 7.00274]
-        ]);
+var bbox = L.latLngBounds([
+    [58.76968, 5.58000],
+    [59.23730, 7.00274]
+]);
+var geocoder = L.Control.geocoder({
+    defaultMarkGeocode: false,
+    placeholder: "Søk...",
+    geocoder: new L.Control.Geocoder.nominatim({
+        geocodingQueryParams: {
+            "addressdetails": 1,
+            "limit": 5,
+            "bounded": 1,
+            "viewbox": [bbox.getSouthWest().lng, bbox.getSouthWest().lat, bbox.getNorthEast().lng, bbox.getNorthEast().lat].join(',')
+        }
+    })
+})
+.on('markgeocode', function(e) {
+    var bbox = e.geocode.bbox;
+    var bounds = L.latLngBounds([
+        bbox.getSouthWest(), 
+        bbox.getNorthEast()
+    ]);
 
-        var geocoder = L.Control.geocoder({
-            defaultMarkGeocode: false,
-            placeholder: "Søk...",
-            geocoder: new L.Control.Geocoder.nominatim({
-                geocodingQueryParams: {
-                    "addressdetails": 1,
-                    "limit": 10,
-                    "bounded": 1,
-                    "viewbox": [bbox.getSouthWest().lng, bbox.getSouthWest().lat, bbox.getNorthEast().lng, bbox.getNorthEast().lat].join(',')
-                }
-            })
-        })
-        .on('markgeocode', function(e) {
-            var bbox = e.geocode.bbox;
-            var bounds = L.latLngBounds([
-                bbox.getSouthWest(), 
-                bbox.getNorthEast()
-            ]);
-
-            map.fitBounds(bounds);
-            
-            // Add a popup with the address information
-            L.popup()
-                .setLatLng(e.geocode.center)
-                .setContent(`<b>${e.geocode.name}</b>`)
-                .openOn(map);
-        })
-        .on('geocode', function(e) {
-            // Customize the suggestion display here
-            e.results.forEach(function(result) {
-                var name = result.name || 'Ukjent';
-                var address = result.address || 'Ingen adresse tilgjengelig';
-                console.log(`Foreslått sted: ${name} - Adresse: ${address}`);
-            });
-        })
-        .addTo(map);
-
+    map.fitBounds(bounds);
+})
+.addTo(map);
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
 </body>
