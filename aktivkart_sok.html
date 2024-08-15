@@ -23,11 +23,24 @@
         .subtle { font-weight: bold; color: gray; }
         body, html { margin: 0; padding: 0; height: 100%; }
         .mapboks { height: 80%; width: 80%; margin: auto; }
+        .search-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="mapboks">
         <div id="map"></div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Søk etter sted...">
+            <button id="searchButton">Søk</button>
+        </div>
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
@@ -109,14 +122,28 @@
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
 
-        const geocodingControl = new maptilersdk.GeocodingControl({
-            apiKey: "eQ1llFLMd4Gy0FanhV62",
-            placeholder: "Søk etter sted...",
-            limit: 5
+        const searchButton = document.getElementById('searchButton');
+        const searchInput = document.getElementById('search');
+
+        searchButton.addEventListener('click', function() {
+            const query = searchInput.value;
+            fetch(`https://api.maptiler.com/geocoding/v2/search.json?text=${encodeURIComponent(query)}&key=eQ1llFLMd4Gy0FanhV62`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.features.length > 0) {
+                        const result = data.features[0];
+                        const latLng = L.latLng(result.geometry.coordinates[1], result.geometry.coordinates[0]);
+                        map.setView(latLng, 13);
+                        L.marker(latLng).addTo(map)
+                            .bindPopup(result.properties.name)
+                            .openPopup();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error with the geocoding request:', error);
+                });
         });
 
-        map.addControl(geocodingControl);
-        
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
 </body>
