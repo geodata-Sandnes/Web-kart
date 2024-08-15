@@ -123,6 +123,7 @@ var geocoder = L.Control.geocoder({
             "addressdetails": 1,
             "limit": 10,
             "bounded": 1,
+            "viewbox": [bbox.getSouthWest().lng, bbox.getSouthWest().lat, bbox.getNorthEast().lng, bbox.getNorthEast().lat].join(',')
 
         }
     })
