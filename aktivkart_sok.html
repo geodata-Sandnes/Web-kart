@@ -114,9 +114,13 @@
         control.addTo(map);
 
 
-    const gc = new maptilersdkMaptilerGeocoder.GeocodingControl({});
-
-      map.addControl(gc, 'top-left');
+        const gc = new maptilersdk.GeocodingControl({
+        apiKey: "eQ1llFLMd4Gy0FanhV62",
+        placeholder: "Søk...",
+        limit: 10,
+        position: 'top-left',
+        });
+        gc.addTo(map);
 
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
