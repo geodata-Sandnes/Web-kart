@@ -102,7 +102,7 @@
             placeholder: "Søk...",
             geocoder: {
                 geocode: function(query, callback) {
-                    fetch(`https://api.maptiler.com/geocoding/v2/geocode.json?key=eQ1llFLMd4Gy0FanhV62&q=${encodeURIComponent(query)}`)
+                    fetch(`https://api.maptiler.com/geocoding/v2/${encodeURIComponent(query)}.json?key=eQ1llFLMd4Gy0FanhV62&q`)
                         .then(response => response.json())
                         .then(data => {
                             if (data && data.features) {
