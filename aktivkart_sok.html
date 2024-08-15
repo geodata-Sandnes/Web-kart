@@ -112,7 +112,7 @@
         var searchControl = new L.Control.Search({
             layer: activeLayer,
             textErr: 'Finner ikke parkeringsplass',
-            propertyName: 'properties.name',
+            propertyName: 'properties.address',
             marker: false,
             moveToLocation: function(latlng, title, map) {
                 map.setView(latlng, 16);
