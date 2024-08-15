@@ -117,26 +117,25 @@
 ]);
 var geocoder = L.Control.geocoder({
     defaultMarkGeocode: false,
-    placeholder:"Søk...",
+    placeholder: "Søk...",
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
-            "viewbox": bbox.toBBoxString(),
-            "bounded": 1,
             "addressdetails": 1,
+            "limit": 10,
             "q": 'place'
         }
     })
-    })
-        .on('markgeocode', function(e) {
-            var bbox = e.geocode.bbox;
-            var bounds = L.latLngBounds([
-                bbox.getSouthWest(), 
-                bbox.getNorthEast()
-            ]);
+})
+.on('markgeocode', function(e) {
+    var bbox = e.geocode.bbox;
+    var bounds = L.latLngBounds([
+        bbox.getSouthWest(), 
+        bbox.getNorthEast()
+    ]);
 
-            map.fitBounds(bounds);
-        })
-        .addTo(map);
+    map.fitBounds(bounds);
+})
+.addTo(map);
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
 </body>
