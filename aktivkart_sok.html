@@ -121,8 +121,10 @@
         map.on('baselayerchange', function(eventLayer) {
             activeLayer = eventLayer.layer;
             searchControl.setLayer(activeLayer);
+            searchControl.Search('');
             var searchInput = document.querySelector('.search-input');
             console.log(searchInput.value);
+            
 
         });
 
