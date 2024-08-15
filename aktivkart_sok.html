@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Karttest</title>
     
     <link rel="stylesheet" href="css/leaflet.css"/>
@@ -88,6 +87,17 @@
                 if(plass.aktivVersjon.antallLadeplasser > 0){ lade_lag.addLayer(marker) }
                 if(plass.aktivVersjon.antallForflytningshemmede > 0){ hc_lag.addLayer(marker) }
             });
+
+            var searchControl = new L.Control.Search({
+                layer: alle_lag,
+                propertyName: 'data.aktivVersjon.navn',
+                marker: false,
+                moveToLocation: function (latlng, title, map) {
+                    map.setView(latlng, 16); 
+                }
+            });
+
+            map.addControl(searchControl);
         }
 
         var allMarkers = [];
@@ -103,8 +113,6 @@
             });
 
 
-            
-
         polygon2.bindPopup("Parkering langs vei forbudt");
         polygon.bindPopup("Parkering langs vei forbudt");
         veiparkeringsforbud.addLayer(polygon);
@@ -112,7 +120,7 @@
         mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
         control.addBaseLayer(alle_lag, 'Alle plasser');
         control.addBaseLayer(lade_lag, 'Ladeplasser');
-        control.addBaseLayer(mc_lag, ' MC-parkering');
+        control.addBaseLayer(mc_lag, 'MC-parkering');
         control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
