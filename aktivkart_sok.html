@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-    <link href="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/style.css" rel="stylesheet">
+
 
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
@@ -17,53 +17,36 @@
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.js"></script>
     <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>    
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <script src="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/maptilersdk.umd.js"></script>
     <style>
         #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
         .subtle { font-weight: bold; color: gray; }
         body, html { margin: 0; padding: 0; height: 100%; }
         .mapboks { height: 80%; width: 80%; margin: auto; }
-        .search-container {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 1000;
-            background: white;
-            padding: 5px;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
     <div class="mapboks">
         <div id="map"></div>
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Søk etter sted...">
-            <button id="searchButton">Søk</button>
-        </div>
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
-        const bbox = L.latLngBounds([
-            [58.76968, 5.58000],
-            [59.23730, 7.00274]
-        ]);
-        maptilersdk.config.apiKey = "eQ1llFLMd4Gy0FanhV62";
+        console.log(testtekst)
         const map = L.map('map', {
-            maxZoom: 18,
-            minZoom: 8,
+        maxZoom: 18,
+        minZoom: 8,
         }).setView([58.8464, 5.7438], 9);
-
         const mtLayer = L.maptilerLayer({
-            style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
-        }).addTo(map);
+        apiKey: "eQ1llFLMd4Gy0FanhV62",
+        style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
+      }).addTo(map);
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             alle_lag = L.layerGroup(),
             lade_lag = L.layerGroup(),
             hc_lag = L.layerGroup(),
             mc_lag = L.layerGroup(),
-            control = L.control.layers(null, null, { collapsed: true });
+            control = L.control.layers(null, null, { collapsed: false }),
+            i, a, title, marker;
 
         mcgLayerSupportGroup.addTo(map);
 
@@ -77,7 +60,7 @@
             });
         }
         load_mcmarker(mc);
-
+        
         function loadMarkers(data) {
             var markers = [];
             data.forEach(function (plass) {
@@ -104,6 +87,8 @@
             });
         }
 
+        var allMarkers = [];
+
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
@@ -121,33 +106,36 @@
         mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
         control.addBaseLayer(alle_lag, 'Alle plasser');
         control.addBaseLayer(lade_lag, 'Ladeplasser');
-        control.addBaseLayer(mc_lag, 'MC-parkering');
+        control.addBaseLayer(mc_lag, ' MC-parkering');
         control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
 
-        const searchButton = document.getElementById('searchButton');
-        const searchInput = document.getElementById('search');
+var bbox = L.latLngBounds([
+    [58.76968, 5.58000],
+    [59.23730, 7.00274]
+]);
+var geocoder = L.Control.geocoder({
+    defaultMarkGeocode: false,
+    placeholder: "Søk...",
+    geocoder: new L.Control.Geocoder.nominatim({
+        geocodingQueryParams: {
+            "addressdetails": 1,
+            "limit": 10,
+            "bounded": 1,
+        }
+    })
+})
+.on('markgeocode', function(e) {
+    var bbox = e.geocode.bbox;
+    var bounds = L.latLngBounds([
+        bbox.getSouthWest(), 
+        bbox.getNorthEast()
+    ]);
 
-        searchButton.addEventListener('click', function() {
-            const query = searchInput.value;
-            fetch(`https://api.maptiler.com/geocoding/v2/search.json?text=${encodeURIComponent(query)}&key=eQ1llFLMd4Gy0FanhV62`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.features.length > 0) {
-                        const result = data.features[0];
-                        const latLng = L.latLng(result.geometry.coordinates[1], result.geometry.coordinates[0]);
-                        map.setView(latLng, 13);
-                        L.marker(latLng).addTo(map)
-                            .bindPopup(result.properties.name)
-                            .openPopup();
-                    }
-                })
-                .catch(error => {
-                    console.error('Error with the geocoding request:', error);
-                });
-        });
-
+    map.fitBounds(bounds);
+})
+.addTo(map);
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
 </body>
