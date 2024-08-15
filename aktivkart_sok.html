@@ -44,6 +44,10 @@
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
+        const bbox = L.latLngBounds([
+            [58.76968, 5.58000],
+            [59.23730, 7.00274]
+        ]);
         maptilersdk.config.apiKey = "eQ1llFLMd4Gy0FanhV62";
         const map = L.map('map', {
             maxZoom: 18,
