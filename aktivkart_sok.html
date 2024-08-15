@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karttest</title>
-    
     <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
-    <link rel="stylesheet" href="css/leaflet-search.css"/>
-    <link rel="stylesheet" href="css/leaflet-search.mobile.css" />
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
-
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport-src.js"></script>
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.js"></script>
     <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
-
     <style>
         #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
         .subtle { font-weight: bold; color: gray; }
         body, html { margin: 0; padding: 0; height: 100%; }
         .mapboks { height: 80%; width: 80%; margin: auto; }
-        .search-input { width: 100%; padding: 8px; }
+        .search-container { position: absolute; top: 10px; left: 10px; z-index: 1000; }
+        .search-input { width: 250px; padding: 8px; }
     </style>
 </head>
 <body>
     <div class="mapboks">
         <div id="map"></div>
+        <div class="search-container">
+            <input id="search-input" class="search-input" type="text" placeholder="Søk etter adresse..."/>
+            <button id="search-button">Søk</button>
+        </div>
     </div>
-
+    <script src="js/variables_parkdata.js"></script>
     <script>
+        console.log(testtekst);
         const map = L.map('map', {
             maxZoom: 18,
             minZoom: 8,
@@ -47,7 +49,6 @@
             hc_lag = L.layerGroup(),
             mc_lag = L.layerGroup(),
             control = L.control.layers(null, null, { collapsed: false }),
-            activeLayer = alle_lag,
             i, a, title, marker;
 
         mcgLayerSupportGroup.addTo(map);
@@ -68,13 +69,7 @@
             data.forEach(function (plass) {
                 var icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
                 var fylladresse = plass.aktivVersjon.adresse || "Ingen";
-                var marker = L.marker([plass.breddegrad, plass.lengdegrad], {
-                    icon: icon,
-                    properties: {
-                        name: plass.aktivVersjon.navn,
-                        address: fylladresse
-                    }
-                }).bindPopup(`
+                var marker = L.marker([plass.breddegrad, plass.lengdegrad], { icon: icon }).bindPopup(`
                     <h2>${plass.aktivVersjon.navn}</h2>
                     Adresse: ${fylladresse}<br>
                     Antall plasser: ${plass.aktivVersjon.antallAvgiftsbelagtePlasser + plass.aktivVersjon.antallAvgiftsfriePlasser}<br>
@@ -90,12 +85,8 @@
                 marker.data = plass;
                 markers.push(marker);
                 alle_lag.addLayer(marker);
-                if (plass.aktivVersjon.antallLadeplasser > 0) {
-                    lade_lag.addLayer(marker);
-                }
-                if (plass.aktivVersjon.antallForflytningshemmede > 0) {
-                    hc_lag.addLayer(marker);
-                }
+                if (plass.aktivVersjon.antallLadeplasser > 0) { lade_lag.addLayer(marker) }
+                if (plass.aktivVersjon.antallForflytningshemmede > 0) { hc_lag.addLayer(marker) }
             });
         }
 
@@ -108,6 +99,19 @@
             .catch(error => {
                 console.error('Error fetching the JSON data:', error);
             });
+
+        polygon2.bindPopup("Parkering langs vei forbudt");
+        polygon.bindPopup("Parkering langs vei forbudt");
+        veiparkeringsforbud.addLayer(polygon);
+        veiparkeringsforbud.addLayer(polygon2);
+        mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
+        control.addBaseLayer(alle_lag, 'Alle plasser');
+        control.addBaseLayer(lade_lag, 'Ladeplasser');
+        control.addBaseLayer(mc_lag, 'MC-parkering');
+        control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
+        control.addBaseLayer(hc_lag, 'HC-parkering');
+        control.addTo(map);
+
 
         function performGeocodeSearch(query) {
             const apiKey = "eQ1llFLMd4Gy0FanhV62";
@@ -126,35 +130,14 @@
                     console.error('Geocoding-feil:', error);
                 });
         }
-        const searchContainer = L.DomUtil.create('div', 'search-container');
-        const searchInput = L.DomUtil.create('input', 'search-input', searchContainer);
-        searchInput.type = 'text';
-        searchInput.placeholder = 'Søk etter adresse...';
-        L.control({ position: 'topright' }).onAdd = function () {
-            return searchContainer;
-        }.addTo(map);
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                performGeocodeSearch(searchInput.value);
-                searchInput.value = '';
+
+        document.getElementById('search-button').addEventListener('click', function() {
+            const query = document.getElementById('search-input').value;
+            if (query) {
+                performGeocodeSearch(query);
+                document.getElementById('search-input').value = '';
             }
         });
-
-        map.on('baselayerchange', function(eventLayer) {
-            activeLayer = eventLayer.layer;
-        });
-
-        polygon2.bindPopup("Parkering langs vei forbudt");
-        polygon.bindPopup("Parkering langs vei forbudt");
-        veiparkeringsforbud.addLayer(polygon);
-        veiparkeringsforbud.addLayer(polygon2);
-        mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
-        control.addBaseLayer(alle_lag, 'Alle plasser');
-        control.addBaseLayer(lade_lag, 'Ladeplasser');
-        control.addBaseLayer(mc_lag, 'MC-parkering');
-        control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
-        control.addBaseLayer(hc_lag, 'HC-parkering');
-        control.addTo(map);
     </script>
 </body>
 </html>
