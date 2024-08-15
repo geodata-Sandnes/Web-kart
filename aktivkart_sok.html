@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
-    <link rel="stylesheet" href="css/leaflet-search.src.css"/>
+    <link rel="stylesheet" href="css/leaflet-search.css"/>
     <link rel="stylesheet" href="css/leaflet-search.mobile.css" />
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
 
@@ -90,10 +90,20 @@
 
             var searchControl = new L.Control.Search({
                 layer: alle_lag,
-                propertyName: 'marker.data.aktivVersjon.navn',
+                propertyName: 'data.aktivVersjon.navn',
                 marker: false,
+                initial: false,
                 moveToLocation: function (latlng, title, map) {
-                    map.setView(latlng, 16); 
+                    map.setView(latlng, 16);
+                },
+                filterData: function (text, records) {
+                    var filteredRecords = {};
+                    markers.forEach(marker => {
+                        if (marker.data.aktivVersjon.navn.toLowerCase().includes(text.toLowerCase())) {
+                            filteredRecords[marker.getLatLng().toString()] = marker;
+                        }
+                    });
+                    return filteredRecords;
                 }
             });
 
