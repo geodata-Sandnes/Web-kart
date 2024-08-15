@@ -99,29 +99,6 @@
     });
 }
 
-            // Custom Search Control
-            var searchControl = new L.Control.Search({
-                layer: alle_lag,
-                initial: false,
-                propertyName: 'data.aktivVersjon.navn',
-                marker: false,
-                moveToLocation: function (latlng, title, map) {
-                    map.setView(latlng, 16); // Zoom in when a location is found
-                },
-                filterData: function (text, records) {
-                    var filteredRecords = {};
-                    markers.forEach(marker => {
-                        if (marker.data.aktivVersjon.navn.toLowerCase().includes(text.toLowerCase())) {
-                            filteredRecords[marker.getLatLng().toString()] = marker;
-                        }
-                    });
-                    return filteredRecords;
-                }
-            });
-
-            map.addControl(searchControl);
-        }
-
         // Fetch the data and load markers
         fetch(jsonUrl)
             .then(response => response.json())
