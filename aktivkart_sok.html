@@ -102,17 +102,24 @@
             placeholder: "Søk...",
             geocoder: {
                 geocode: function(query, callback) {
-                    fetch(`https://api.maptiler.com/geocoding/v2/geocode.json?key=eQ1llFLMd4Gy0FanhV62&q=${query}`)
+                    fetch(`https://api.maptiler.com/geocoding/v2/geocode.json?key=eQ1llFLMd4Gy0FanhV62&q=${encodeURIComponent(query)}`)
                         .then(response => response.json())
                         .then(data => {
-                            const results = data.features.map(feature => {
-                                return {
-                                    bbox: feature.bbox,
-                                    center: [feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
-                                    text: feature.place_name
-                                };
-                            });
-                            callback(results);
+                            if (data && data.features) {
+                                const results = data.features.map(feature => {
+                                    return {
+                                        bbox: feature.bbox ? L.latLngBounds([
+                                            [feature.bbox[1], feature.bbox[0]],
+                                            [feature.bbox[3], feature.bbox[2]]
+                                        ]) : undefined,
+                                        center: [feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
+                                        text: feature.place_name
+                                    };
+                                });
+                                callback(results);
+                            } else {
+                                console.error('Unexpected response format:', data);
+                            }
                         })
                         .catch(error => {
                             console.error('Error with geocoding request:', error);
@@ -122,11 +129,9 @@
         })
         .on('markgeocode', function(e) {
             const bbox = e.geocode.bbox;
-            const bounds = L.latLngBounds([
-                bbox.getSouthWest(), 
-                bbox.getNorthEast()
-            ]);
-            map.fitBounds(bounds);
+            if (bbox) {
+                map.fitBounds(bbox);
+            }
         })
         .addTo(map);
 
