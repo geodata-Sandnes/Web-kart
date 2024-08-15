@@ -114,7 +114,8 @@
 var geocoderOptions = {
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
-            "countrycodes": "gb"
+            "countrycodes": "gb",
+            "limit": 1
         }
     })
 };
