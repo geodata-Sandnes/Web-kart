@@ -64,29 +64,40 @@
         load_mcmarker(mc);
 
         function loadMarkers(data) {
-            var markers = [];
-            data.forEach(function (plass) {
-                var icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
-                var fylladresse = plass.aktivVersjon.adresse || "Ingen";
-                var marker = L.marker([plass.breddegrad, plass.lengdegrad], { icon: icon }).bindPopup(`
-                    <h2>${plass.aktivVersjon.navn}</h2>
-                    Adresse: ${fylladresse}<br>
-                    Antall plasser: ${plass.aktivVersjon.antallAvgiftsbelagtePlasser + plass.aktivVersjon.antallAvgiftsfriePlasser}<br>
-                    Ladeplasser: ${plass.aktivVersjon.antallLadeplasser}<br>
-                    HC: ${plass.aktivVersjon.antallForflytningshemmede}<br>
-                    <br>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.breddegrad},${plass.lengdegrad}" target="_blank">Veibeskrivelse</a> <br>
-                    <br>
-                    <sup>${plass.parkeringstilbyderNavn}</sup>
-                    <br>
-                    <sup>Id: ${plass.id}</sup>
-                `);
-                marker.data = plass;
-                markers.push(marker);
-                alle_lag.addLayer(marker);
-                if(plass.aktivVersjon.antallLadeplasser > 0) { lade_lag.addLayer(marker); }
-                if(plass.aktivVersjon.antallForflytningshemmede > 0) { hc_lag.addLayer(marker); }
-            });
+    var markers = [];
+    data.forEach(function (plass) {
+        var icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
+        var fylladresse = plass.aktivVersjon.adresse || "Ingen";
+        var marker = L.marker([plass.breddegrad, plass.lengdegrad], {
+            icon: icon,
+            properties: {
+                name: plass.aktivVersjon.navn,
+                address: fylladresse
+            }
+        }).bindPopup(`
+            <h2>${plass.aktivVersjon.navn}</h2>
+            Adresse: ${fylladresse}<br>
+            Antall plasser: ${plass.aktivVersjon.antallAvgiftsbelagtePlasser + plass.aktivVersjon.antallAvgiftsfriePlasser}<br>
+            Ladeplasser: ${plass.aktivVersjon.antallLadeplasser}<br>
+            HC: ${plass.aktivVersjon.antallForflytningshemmede}<br>
+            <br>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.breddegrad},${plass.lengdegrad}" target="_blank">Veibeskrivelse</a> <br>
+            <br>
+            <sup>${plass.parkeringstilbyderNavn}</sup>
+            <br>
+            <sup>Id: ${plass.id}</sup>
+        `);
+        marker.data = plass;
+        markers.push(marker);
+        alle_lag.addLayer(marker);
+        if (plass.aktivVersjon.antallLadeplasser > 0) {
+            lade_lag.addLayer(marker);
+        }
+        if (plass.aktivVersjon.antallForflytningshemmede > 0) {
+            hc_lag.addLayer(marker);
+        }
+    });
+}
 
             // Custom Search Control
             var searchControl = new L.Control.Search({
