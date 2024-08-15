@@ -8,24 +8,43 @@
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport-src.js"></script>
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.js"></script>
-    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>    
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
     <style>
         #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
         .subtle { font-weight: bold; color: gray; }
         body, html { margin: 0; padding: 0; height: 100%; }
         .mapboks { height: 80%; width: 80%; margin: auto; }
+        #searchContainer {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        }
+        #searchInput {
+            width: 300px;
+            padding: 5px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <div class="mapboks">
         <div id="map"></div>
     </div>
+    
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Søk etter et sted..." />
+        <button id="searchBtn">Søk</button>
+    </div>
+    
     <script src="js/variables_parkdata.js"></script>
     <script>
         const map = L.map('map', {
@@ -38,18 +57,19 @@
             style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
         }).addTo(map);
 
-        const mcgLayerSupportGroup = L.markerClusterGroup.layerSupport();
-        const alle_lag = L.layerGroup();
-        const lade_lag = L.layerGroup();
-        const hc_lag = L.layerGroup();
-        const mc_lag = L.layerGroup();
-        const control = L.control.layers(null, null, { collapsed: false });
+        var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
+            alle_lag = L.layerGroup(),
+            lade_lag = L.layerGroup(),
+            hc_lag = L.layerGroup(),
+            mc_lag = L.layerGroup(),
+            control = L.control.layers(null, null, { collapsed: false });
 
         mcgLayerSupportGroup.addTo(map);
 
+        // Function to load MC Markers
         function load_mcmarker(mc) {
             mc.forEach(function(mcplass) {
-                const mcMarker = L.marker([mcplass[0], mcplass[1]], { icon: mcikon }).bindPopup(`
+                var mcMarker = L.marker([mcplass[0], mcplass[1]], { icon: mcikon }).bindPopup(`
                     <h2>MC-parkering</h2>
                     <a href="https://www.google.com/maps/dir/?api=1&destination=${mcplass[0]},${mcplass[1]}" target="_blank">Veibeskrivelse</a> <br>
                 `);
@@ -58,24 +78,20 @@
         }
         load_mcmarker(mc);
 
+        // Function to load Markers for parking data
         function loadMarkers(data) {
             data.forEach(function (plass) {
-                const icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
-                const fylladresse = plass.aktivVersjon.adresse || "Ingen";
-                const marker = L.marker([plass.breddegrad, plass.lengdegrad], { icon: icon }).bindPopup(`
+                var icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
+                var marker = L.marker([plass.breddegrad, plass.lengdegrad], { icon: icon }).bindPopup(`
                     <h2>${plass.aktivVersjon.navn}</h2>
-                    Adresse: ${fylladresse}<br>
+                    Adresse: ${plass.aktivVersjon.adresse || "Ingen"}<br>
                     Antall plasser: ${plass.aktivVersjon.antallAvgiftsbelagtePlasser + plass.aktivVersjon.antallAvgiftsfriePlasser}<br>
                     Ladeplasser: ${plass.aktivVersjon.antallLadeplasser}<br>
                     HC: ${plass.aktivVersjon.antallForflytningshemmede}<br>
-                    <br>
                     <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.breddegrad},${plass.lengdegrad}" target="_blank">Veibeskrivelse</a> <br>
-                    <br>
                     <sup>${plass.parkeringstilbyderNavn}</sup>
-                    <br>
                     <sup>Id: ${plass.id}</sup>
                 `);
-                marker.data = plass;
                 alle_lag.addLayer(marker);
                 if(plass.aktivVersjon.antallLadeplasser > 0) lade_lag.addLayer(marker);
                 if(plass.aktivVersjon.antallForflytningshemmede > 0) hc_lag.addLayer(marker);
@@ -92,57 +108,29 @@
                 console.error('Error fetching the JSON data:', error);
             });
 
-        const bbox = L.latLngBounds([
-            [58.76968, 5.58000],
-            [59.23730, 7.00274]
-        ]);
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            var query = document.getElementById('searchInput').value;
+            var apiKey = "eQ1llFLMd4Gy0FanhV62";
+            var url = `https://api.maptiler.com/geocoding/${encodeURIComponent(query)}.json?key=${apiKey}`;
 
-        const geocoderControl = L.Control.geocoder({
-            defaultMarkGeocode: false,
-            placeholder: "Søk...",
-            geocoder: {
-                geocode: function(query, callback) {
-                    fetch(`https://api.maptiler.com/geocoding/${encodeURIComponent(query)}.json?key=eQ1llFLMd4Gy0FanhV62&q`)
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data && data.features) {
-                                const results = data.features.map(feature => {
-                                    return {
-                                        bbox: feature.bbox ? L.latLngBounds([
-                                            [feature.bbox[1], feature.bbox[0]],
-                                            [feature.bbox[3], feature.bbox[2]]
-                                        ]) : undefined,
-                                        center: [feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
-                                        text: feature.place_name
-                                    };
-                                });
-                                callback(results);
-                            } else {
-                                console.error('Unexpected response format:', data);
-                            }
-                        })
-                        .catch(error => {
-                            console.error('Error with geocoding request:', error);
-                        });
-                }
-            }
-        })
-        .on('markgeocode', function(e) {
-            const bbox = e.geocode.bbox;
-            if (bbox) {
-                map.fitBounds(bbox);
-            }
-        })
-        .addTo(map);
-
-        L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
-
-        control.addBaseLayer(alle_lag, 'Alle plasser');
-        control.addBaseLayer(lade_lag, 'Ladeplasser');
-        control.addBaseLayer(mc_lag, 'MC-parkering');
-        control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
-        control.addBaseLayer(hc_lag, 'HC-parkering');
-        control.addTo(map);
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.features.length > 0) {
+                        var result = data.features[0];
+                        var latLng = [result.geometry.coordinates[1], result.geometry.coordinates[0]];
+                        map.setView(latLng, 13);
+                        
+                        // Optionally, place a marker on the searched location
+                        var searchMarker = L.marker(latLng).addTo(map).bindPopup(result.place_name).openPopup();
+                    } else {
+                        alert("Sted ikke funnet. Prøv igjen.");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching geocoding data:', error);
+                });
+        });
     </script>
 </body>
 </html>
