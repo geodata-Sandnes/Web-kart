@@ -32,23 +32,22 @@
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
-        console.log(testtekst)
         const map = L.map('map', {
-        maxZoom: 18,
-        minZoom: 8,
+            maxZoom: 18,
+            minZoom: 8,
         }).setView([58.8464, 5.7438], 9);
+
         const mtLayer = L.maptilerLayer({
-        apiKey: "eQ1llFLMd4Gy0FanhV62",
-        style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
-      }).addTo(map);
+            apiKey: "eQ1llFLMd4Gy0FanhV62",
+            style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
+        }).addTo(map);
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             alle_lag = L.layerGroup(),
             lade_lag = L.layerGroup(),
             hc_lag = L.layerGroup(),
             mc_lag = L.layerGroup(),
-            control = L.control.layers(null, null, { collapsed: false }),
-            i, a, title, marker;
+            control = L.control.layers(null, null, { collapsed: false });
 
         mcgLayerSupportGroup.addTo(map);
 
@@ -61,8 +60,9 @@
                 mc_lag.addLayer(mcMarker);
             });
         }
+
         load_mcmarker(mc);
-        
+
         function loadMarkers(data) {
             var markers = [];
             data.forEach(function (plass) {
@@ -84,17 +84,18 @@
                 marker.data = plass;
                 markers.push(marker);
                 alle_lag.addLayer(marker);
-                if(plass.aktivVersjon.antallLadeplasser > 0){ lade_lag.addLayer(marker) }
-                if(plass.aktivVersjon.antallForflytningshemmede > 0){ hc_lag.addLayer(marker) }
+                if(plass.aktivVersjon.antallLadeplasser > 0) { lade_lag.addLayer(marker); }
+                if(plass.aktivVersjon.antallForflytningshemmede > 0) { hc_lag.addLayer(marker); }
             });
 
+            // Custom Search Control
             var searchControl = new L.Control.Search({
                 layer: alle_lag,
+                initial: false,
                 propertyName: 'data.aktivVersjon.navn',
                 marker: false,
-                initial: false,
                 moveToLocation: function (latlng, title, map) {
-                    map.setView(latlng, 16);
+                    map.setView(latlng, 16); // Zoom in when a location is found
                 },
                 filterData: function (text, records) {
                     var filteredRecords = {};
@@ -110,8 +111,7 @@
             map.addControl(searchControl);
         }
 
-        var allMarkers = [];
-
+        // Fetch the data and load markers
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
@@ -122,11 +122,11 @@
                 console.error('Error fetching the JSON data:', error);
             });
 
-
         polygon2.bindPopup("Parkering langs vei forbudt");
         polygon.bindPopup("Parkering langs vei forbudt");
         veiparkeringsforbud.addLayer(polygon);
         veiparkeringsforbud.addLayer(polygon2);
+
         mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
         control.addBaseLayer(alle_lag, 'Alle plasser');
         control.addBaseLayer(lade_lag, 'Ladeplasser');
