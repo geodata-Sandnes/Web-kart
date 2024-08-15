@@ -134,6 +134,7 @@ var geocoder = L.Control.geocoder({
             map.fitBounds(bounds);
         })
         .addTo(map);
+        window.rectangle = L.rectangle(bounds, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
 </body>
 </html>
