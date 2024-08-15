@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link href="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/style.css" rel="stylesheet">
 
 
     <script src="js/leaflet.js"></script>
@@ -17,6 +18,7 @@
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.js"></script>
     <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>    
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/maptilersdk.umd.js"></script>
     <style>
         #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
         .subtle { font-weight: bold; color: gray; }
@@ -30,13 +32,13 @@
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
+        maptilersdk.config.apiKey = "eQ1llFLMd4Gy0FanhV62";
         console.log(testtekst)
         const map = L.map('map', {
         maxZoom: 18,
         minZoom: 8,
         }).setView([58.8464, 5.7438], 9);
         const mtLayer = L.maptilerLayer({
-        apiKey: "eQ1llFLMd4Gy0FanhV62",
         style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
       }).addTo(map);
 
@@ -111,26 +113,11 @@
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
 
-var bbox = L.latLngBounds([
-    [58.76968, 5.58000],
-    [59.23730, 7.00274]
-]);
-var geocoder = L.maptilerGeocoder({
-    input: "Søk...",
-    key: "eQ1llFLMd4Gy0FanhV62",
-    bounds: bbox
-})
-.on('select', function(e) {
-    var result = e.data;
-    var latlng = L.latLng(result.geometry.coordinates[1], result.geometry.coordinates[0]);
 
-    if (bbox.contains(latlng)) {
-        map.setView(latlng, 14); // Zoom to the selected location
-    } else {
-        alert("The result is outside the search boundary.");
-    }
-})
-.addTo(map);
+    const gc = new maptilersdkMaptilerGeocoder.GeocodingControl({});
+
+      map.addControl(gc, 'top-left');
+
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
 </body>
