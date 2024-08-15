@@ -116,7 +116,9 @@ var geocoder = L.Control.geocoder({
     defaultMarkGeocode: false,
     placeholder:"Søk...",
     geocoder: new L.Control.Geocoder.nominatim({
-
+        geocodingQueryParams: {
+            "country": "FR",
+        }
     })
     })
         .on('markgeocode', function(e) {
