@@ -121,7 +121,8 @@ var geocoder = L.Control.geocoder({
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
             "viewbox": bbox.toBBoxString(),
-            "bounded": 1
+            "bounded": 1,
+            "addressdetails": 1
         }
     })
     })
