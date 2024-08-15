@@ -45,7 +45,7 @@
             lade_lag = L.layerGroup(),
             hc_lag = L.layerGroup(),
             mc_lag = L.layerGroup(),
-            control = L.control.layers(null, null, { collapsed: false }),
+            control = L.control.layers(null, null, { collapsed: true }),
             i, a, title, marker;
 
         mcgLayerSupportGroup.addTo(map);
@@ -115,27 +115,20 @@ var bbox = L.latLngBounds([
     [58.76968, 5.58000],
     [59.23730, 7.00274]
 ]);
-var geocoder = L.Control.geocoder({
-    defaultMarkGeocode: false,
-    placeholder: "Søk...",
-    geocoder: new L.Control.Geocoder.nominatim({
-        geocodingQueryParams: {
-            "addressdetails": 1,
-            "limit": 10,
-            "bounded": 1,
-            "viewbox": [bbox.getSouthWest().lng, bbox.getSouthWest().lat, bbox.getNorthEast().lng, bbox.getNorthEast().lat].join(',')
-
-        }
-    })
+var geocoder = L.maptilerGeocoder({
+    input: "Søk...",
+    key: "eQ1llFLMd4Gy0FanhV62",
+    bounds: bbox
 })
-.on('markgeocode', function(e) {
-    var bbox = e.geocode.bbox;
-    var bounds = L.latLngBounds([
-        bbox.getSouthWest(), 
-        bbox.getNorthEast()
-    ]);
+.on('select', function(e) {
+    var result = e.data;
+    var latlng = L.latLng(result.geometry.coordinates[1], result.geometry.coordinates[0]);
 
-    map.fitBounds(bounds);
+    if (bbox.contains(latlng)) {
+        map.setView(latlng, 14); // Zoom to the selected location
+    } else {
+        alert("The result is outside the search boundary.");
+    }
 })
 .addTo(map);
         window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
