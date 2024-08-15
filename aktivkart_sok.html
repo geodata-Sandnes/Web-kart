@@ -119,8 +119,12 @@
         });
 
         map.on('baselayerchange', function(eventLayer) {
-        activeLayer = eventLayer.layer;
-        searchControl.setLayer(activeLayer);
+            activeLayer = eventLayer.layer;
+            searchControl.setLayer(activeLayer);
+            var searchInput = document.querySelector('.search-input');
+            if (searchInput) {
+                searchInput.value = '';
+            }
         });
 
         map.addControl(searchControl);
