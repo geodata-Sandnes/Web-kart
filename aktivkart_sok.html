@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport-src.js"></script>
@@ -18,31 +21,39 @@
         .subtle { font-weight: bold; color: gray; }
         body, html { margin: 0; padding: 0; height: 100%; }
         .mapboks { height: 80%; width: 80%; margin: auto; }
-        .search-container { position: absolute; top: 10px; left: 10px; z-index: 1000; }
-        .search-input { width: 250px; padding: 8px; }
     </style>
 </head>
 <body>
     <div class="mapboks">
         <div id="map"></div>
-        <div class="search-container">
-            <input id="search-input" class="search-input" type="text" placeholder="Søk etter adresse..."/>
-            <button id="search-button">Søk</button>
-        </div>
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
-        console.log(testtekst);
+        console.log(testtekst)
         const map = L.map('map', {
-            maxZoom: 18,
-            minZoom: 8,
+        maxZoom: 18,
+        minZoom: 8,
         }).setView([58.8464, 5.7438], 9);
-
         const mtLayer = L.maptilerLayer({
-            apiKey: "eQ1llFLMd4Gy0FanhV62",
-            style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
-        }).addTo(map);
+        apiKey: "eQ1llFLMd4Gy0FanhV62",
+        style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
+      }).addTo(map);
 
+      var geocoder = L.Control.geocoder({
+        defaultMarkGeocode: false
+        })
+        .on('markgeocode', function(e) {
+            var bbox = e.geocode.bbox;
+            var poly = L.polygon([
+            bbox.getSouthEast(),
+            bbox.getNorthEast(),
+            bbox.getNorthWest(),
+            bbox.getSouthWest()
+            ]).addTo(map);
+            map.fitBounds(poly.getBounds());
+        })
+        .addTo(map);
+        
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             alle_lag = L.layerGroup(),
             lade_lag = L.layerGroup(),
@@ -63,7 +74,7 @@
             });
         }
         load_mcmarker(mc);
-
+        
         function loadMarkers(data) {
             var markers = [];
             data.forEach(function (plass) {
@@ -85,10 +96,12 @@
                 marker.data = plass;
                 markers.push(marker);
                 alle_lag.addLayer(marker);
-                if (plass.aktivVersjon.antallLadeplasser > 0) { lade_lag.addLayer(marker) }
-                if (plass.aktivVersjon.antallForflytningshemmede > 0) { hc_lag.addLayer(marker) }
+                if(plass.aktivVersjon.antallLadeplasser > 0){ lade_lag.addLayer(marker) }
+                if(plass.aktivVersjon.antallForflytningshemmede > 0){ hc_lag.addLayer(marker) }
             });
         }
+
+        var allMarkers = [];
 
         fetch(jsonUrl)
             .then(response => response.json())
@@ -107,38 +120,10 @@
         mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
         control.addBaseLayer(alle_lag, 'Alle plasser');
         control.addBaseLayer(lade_lag, 'Ladeplasser');
-        control.addBaseLayer(mc_lag, 'MC-parkering');
+        control.addBaseLayer(mc_lag, ' MC-parkering');
         control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
-
-
-        function performGeocodeSearch(query) {
-            const apiKey = "eQ1llFLMd4Gy0FanhV62";
-            fetch(`https://api.maptiler.com/geocoding/?key=${apiKey}&q=${encodeURIComponent(query)}`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.features.length > 0) {
-                        const firstResult = data.features[0];
-                        const coordinates = firstResult.geometry.coordinates;
-                        map.setView([coordinates[1], coordinates[0]], 12);
-                    } else {
-                        console.log('Ingen resultater funnet.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Geocoding-feil:', error);
-                });
-        }
-
-        document.getElementById('search-button').addEventListener('click', function() {
-            const query = document.getElementById('search-input').value;
-            if (query) {
-                performGeocodeSearch(query);
-                document.getElementById('search-input').value = '';
-                console.log("!")
-            }
-        });
     </script>
 </body>
 </html>
