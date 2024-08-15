@@ -111,6 +111,7 @@
             });
         var searchControl = new L.Control.Search({
             layer: activeLayer,
+            textErr: 'Finner ikke parkeringsplass',
             propertyName: 'properties.name',
             marker: false,
             moveToLocation: function(latlng, title, map) {
@@ -121,7 +122,6 @@
         map.on('baselayerchange', function(eventLayer) {
             activeLayer = eventLayer.layer;
             searchControl.setLayer(activeLayer);
-            searchControl.Search('');
             var searchInput = document.querySelector('.search-input');
             console.log(searchInput.value);
             
