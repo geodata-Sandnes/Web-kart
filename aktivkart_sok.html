@@ -111,22 +111,20 @@
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
 
-var geocoderOptions = {
+
+var geocoder = L.Control.geocoder({
+    defaultMarkGeocode: false,
+    options: geocoderOptions,
+    placeholder:"Søk...",
     geocoder: new L.Control.Geocoder.nominatim({
         geocodingQueryParams: {
             "country": "FR",
             "city": "Paris"
         }
     })
-};
-
-var geocoder = L.Control.geocoder({
-    defaultMarkGeocode: false,
-    options: geocoderOptions
     })
         .on('markgeocode', function(e) {
             var bbox = e.geocode.bbox;
-
             var bounds = L.latLngBounds([
                 bbox.getSouthWest(), 
                 bbox.getNorthEast()
