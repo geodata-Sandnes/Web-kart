@@ -30,6 +30,8 @@
         <div id="map"></div>
     </div>
     <script>
+
+        const apiKey = "eQ1llFLMd4Gy0FanhV62"
         console.log(testtekst);
         const map = L.map("map",{
             maxZoom: 18,
@@ -37,7 +39,7 @@
         }).setView([58.8464, 5.7438],9);
         const scale = devicePixelRatio > 1.5 ? "@2x" : "";
         const mtLayer = L.maptilerLayer({
-        apiKey: "eQ1llFLMd4Gy0FanhV62",
+        apiKey: apiKey,
         style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
       }).addTo(map);
 
