@@ -38,17 +38,12 @@
         crossOrigin: true
       }).addTo(map);
 
-      // Bounding box koordinater
-      const bbox = [58.76968, 5.58000, 59.23730, 7.00274];
       const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
       
-      // Legg til MapTiler Geocoding kontroll
       L.control.maptilerGeocoding({ 
         apiKey: key,
         bbox: bboxflipped
       }).addTo(map);
-
-      // Tegn bounding box på kartet
       const southWest = L.latLng(bbox[0], bbox[1]);
       const northEast = L.latLng(bbox[2], bbox[3]);
       const bounds = L.latLngBounds(southWest, northEast);

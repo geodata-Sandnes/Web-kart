@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="css/L.Control.Layers.Tree.css"/>
+    <link href="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/style.css" rel="stylesheet">
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-
-
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
+    <script src="js/L.Control.Layers.Tree.js"></script>
+    <script src="js/variables_akt.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport-src.js"></script>
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.js"></script>
-    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>    
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+    <script src="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/leaflet.umd.js"></script>
+
     <style>
         #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
-        .subtle { font-weight: bold; color: gray; }
         body, html { margin: 0; padding: 0; height: 100%; }
         .mapboks { height: 80%; width: 80%; margin: auto; }
     </style>
@@ -28,116 +29,198 @@
     <div class="mapboks">
         <div id="map"></div>
     </div>
-    <script src="js/variables_parkdata.js"></script>
     <script>
-        console.log(testtekst)
-        const map = L.map('map', {
-        maxZoom: 18,
-        minZoom: 8,
-        }).setView([58.8464, 5.7438], 9);
+        console.log(testtekst);
+        const map = L.map("map",{
+            maxZoom: 18,
+            minZoom: 8,
+        }).setView([58.8464, 5.7438],9);
+        const scale = devicePixelRatio > 1.5 ? "@2x" : "";
         const mtLayer = L.maptilerLayer({
         apiKey: "eQ1llFLMd4Gy0FanhV62",
-        style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
+        style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
       }).addTo(map);
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
-            alle_lag = L.layerGroup(),
-            lade_lag = L.layerGroup(),
-            hc_lag = L.layerGroup(),
-            mc_lag = L.layerGroup(),
+            group_all_Cluster = L.layerGroup(),
+            group_annet_Cluster = L.layerGroup(),
+            group_100_Cluster = L.layerGroup(),
+            group_101_Cluster = L.layerGroup(),
+            group_102_Cluster = L.layerGroup(),
+            group_907_Cluster = L.layerGroup(),
+            group_201_Cluster = L.layerGroup(),
+            group_300_Cluster = L.layerGroup(),
+            group_301_Cluster = L.layerGroup(),
+            group_902_Cluster = L.layerGroup(),
+            group_908_Cluster = L.layerGroup(),
+            group_900_Cluster = L.layerGroup(),
+            group_901_Cluster = L.layerGroup(),
+            group_903_Cluster = L.layerGroup(),
+            group_906_Cluster = L.layerGroup(),
+            group_904_Cluster = L.layerGroup(),
+            group_911_Cluster = L.layerGroup(),
+            group_905_Cluster = L.layerGroup(),
+            group_909_Cluster = L.layerGroup(),
             control = L.control.layers(null, null, { collapsed: false }),
-            i, a, title, marker;
+            allMarkers = [];
 
         mcgLayerSupportGroup.addTo(map);
 
-        function load_mcmarker(mc) {
-            mc.forEach(function(mcplass) {
-                var mcMarker = L.marker([mcplass[0], mcplass[1]], { icon: mcikon }).bindPopup(`
-                    <h2>MC-parkering</h2>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=${mcplass[0]},${mcplass[1]}" target="_blank">Veibeskrivelse</a> <br>
-                `);
-                mc_lag.addLayer(mcMarker);
-            });
-        }
-        load_mcmarker(mc);
-        
-        function loadMarkers(data) {
-            var markers = [];
-            data.forEach(function (plass) {
-                var icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
-                var fylladresse = plass.aktivVersjon.adresse || "Ingen";
-                var marker = L.marker([plass.breddegrad, plass.lengdegrad], { icon: icon }).bindPopup(`
-                    <h2>${plass.aktivVersjon.navn}</h2>
-                    Adresse: ${fylladresse}<br>
-                    Antall plasser: ${plass.aktivVersjon.antallAvgiftsbelagtePlasser + plass.aktivVersjon.antallAvgiftsfriePlasser}<br>
-                    Ladeplasser: ${plass.aktivVersjon.antallLadeplasser}<br>
-                    HC: ${plass.aktivVersjon.antallForflytningshemmede}<br>
-                    <br>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.breddegrad},${plass.lengdegrad}" target="_blank">Veibeskrivelse</a> <br>
-                    <br>
-                    <sup>${plass.parkeringstilbyderNavn}</sup>
-                    <br>
-                    <sup>Id: ${plass.id}</sup>
-                `);
-                marker.data = plass;
-                markers.push(marker);
-                alle_lag.addLayer(marker);
-                if(plass.aktivVersjon.antallLadeplasser > 0){ lade_lag.addLayer(marker) }
-                if(plass.aktivVersjon.antallForflytningshemmede > 0){ hc_lag.addLayer(marker) }
-            });
+        function imageExists(url, callback) {
+            var img = new Image();
+            img.onload = function() { callback(true); };
+            img.onerror = function() { callback(false); };
+            img.src = url;
         }
 
-        var allMarkers = [];
+        function loadMarkers(data) {
+            var markers = [];
+            if (data.features && Array.isArray(data.features)) {
+                data.features.forEach(function (plass) {
+                    var type = plass.attributes.Type;
+                    var iconUrl = `${direct}css/images/icon/aktiv/${type}.png`;
+
+                    imageExists(iconUrl, function(exists) {
+                        if (!exists) {
+                            iconUrl = `${direct}css/images/icon/aktiv/999.png`;
+                        }
+
+                        var icon = L.icon({
+                            iconUrl: iconUrl,
+                            iconSize: [32, 32],
+                            iconAnchor: [16, 32],
+                            popupAnchor: [0, -32]
+                        });
+
+                        var adresse = plass.attributes.Gatenavn !== "*" ? `Adresse: ${plass.attributes.Gatenavn} ${plass.attributes.Husnummer || ''}${plass.attributes.Bokstav || ''}` : "";
+                        var link_navn = plass.attributes.Url !== "*" ? `<a href="${plass.attributes.Url}" target="_blank"><h2>${plass.attributes.Navn}</h2></a>` : `<h2>${plass.attributes.Navn}</h2>`;
+
+                        var marker = L.marker([plass.geometry.latitude, plass.geometry.longitude], {
+                            icon: icon,
+                            title: plass.attributes.Navn
+                        }).bindPopup(`
+                             ${link_navn}
+                            ${adresse}<br>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.geometry.latitude},${plass.geometry.longitude}" target="_blank">Veibeskrivelse</a> <br>
+                        `);
+                        marker.data = plass;
+
+                        markers.push(marker);
+                        try {
+                            eval(`group_${plass.attributes.Type}_Cluster`).addLayer(marker);
+                        } catch (error) {
+                            console.log(error);
+                            group_annet_Cluster.addLayer(marker);
+                        }
+                        group_all_Cluster.addLayer(marker);
+                    });
+                });
+            } else {
+                console.error('Data does not contain features array');
+            }
+            return markers;
+        }
 
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
-                loadMarkers(data);
-                map.addLayer(alle_lag);
+                allMarkers = loadMarkers(data);
+                mcgLayerSupportGroup.checkIn([
+                    group_all_Cluster,
+                    group_annet_Cluster,
+                    group_100_Cluster,
+                    group_101_Cluster,
+                    group_102_Cluster,
+                    group_907_Cluster,
+                    group_201_Cluster,
+                    group_300_Cluster,
+                    group_301_Cluster,
+                    group_902_Cluster,
+                    group_908_Cluster,
+                    group_900_Cluster,
+                    group_901_Cluster,
+                    group_903_Cluster,
+                    group_906_Cluster,
+                    group_904_Cluster,
+                    group_911_Cluster,
+                    group_905_Cluster,
+                    group_909_Cluster
+                ]);
+                map.addLayer(group_all_Cluster);
             })
             .catch(error => {
                 console.error('Error fetching the JSON data:', error);
             });
 
-        polygon2.bindPopup("Parkering langs vei forbudt");
-        polygon.bindPopup("Parkering langs vei forbudt");
-        veiparkeringsforbud.addLayer(polygon);
-        veiparkeringsforbud.addLayer(polygon2);
-        mcgLayerSupportGroup.checkIn([alle_lag, lade_lag, mc_lag, hc_lag]);
-        control.addBaseLayer(alle_lag, 'Alle plasser');
-        control.addBaseLayer(lade_lag, 'Ladeplasser');
-        control.addBaseLayer(mc_lag, ' MC-parkering');
-        control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
-        control.addBaseLayer(hc_lag, 'HC-parkering');
-        control.addTo(map);
+        var overlays = {
+            label: "<strong>Aktiviteter</strong>",
+            children: [
+                {
+                    label: "Alt",
+                    layer: group_all_Cluster
+                },
+                {
+                    label: "<b>Fotballbaner</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Kunstgress", layer: group_100_Cluster },
+                        { label: "Grus", layer: group_101_Cluster },
+                        { label: "Gress", layer: group_102_Cluster }
+                    ]
+                },
+                {
+                    label: "<b>Friidrett</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Friidrettsbane", layer: group_907_Cluster },
+                        { label: "Idrettshall", layer: group_201_Cluster }
+                    ]
+                },
+                {
+                    label: "<b>Svømmehaller</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Helsebasseng", layer: group_300_Cluster },
+                        { label: "Svømmehall", layer: group_301_Cluster }
+                    ]
+                },
+                {
+                    label: "<b>Sykkel</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "BMX-bane", layer: group_902_Cluster },
+                        { label: "Pumptrack", layer: group_908_Cluster },
+                        { label: "Sykkelopplæring", layer: group_900_Cluster }
+                    ]
+                },
+                {
+                    label: "<b>Annet</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Rideanlegg", layer: group_905_Cluster },
+                        { label: "Discgolf", layer: group_901_Cluster },
+                        { label: "Rulleski", layer: group_903_Cluster },
+                        { label: "Skatepark", layer: group_906_Cluster },
+                        { label: "Sandvolleyball", layer: group_911_Cluster },
+                        { label: "Tennisbane", layer: group_904_Cluster },
+                        { label: "Skytebane", layer: group_909_Cluster },
+                        { label: "Annet", layer: group_annet_Cluster }
+                    ]
+                }
+            ]
+        };
 
-var bbox = L.latLngBounds([
-    [58.76968, 5.58000],
-    [59.23730, 7.00274]
-]);
-var geocoder = L.Control.geocoder({
-    defaultMarkGeocode: false,
-    placeholder: "Søk...",
-    geocoder: new L.Control.Geocoder.nominatim({
-        geocodingQueryParams: {
-            "addressdetails": 1,
-            "limit": 5,
-            "bounded": 1,
-            "viewbox": [bbox.getSouthWest().lng, bbox.getSouthWest().lat, bbox.getNorthEast().lng, bbox.getNorthEast().lat].join(',')
-        }
-    })
-})
-.on('markgeocode', function(e) {
-    var bbox = e.geocode.bbox;
-    var bounds = L.latLngBounds([
-        bbox.getSouthWest(), 
-        bbox.getNorthEast()
-    ]);
+        L.control.layers.tree(overlays, null).addTo(map);
+        L.control.maptilerGeocoding({ 
+        apiKey: key,
+        bbox: bboxflipped
+      }).addTo(map);
+      const southWest = L.latLng(bbox[0], bbox[1]);
+      const northEast = L.latLng(bbox[2], bbox[3]);
+      const bounds = L.latLngBounds(southWest, northEast);
 
-    map.fitBounds(bounds);
-})
-.addTo(map);
-        window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
+      L.rectangle(bounds, { color: "#ff7800", weight: 1 }).addTo(map);
+      map.fitBounds(bounds);
     </script>
 </body>
 </html>
