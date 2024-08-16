@@ -40,11 +40,12 @@
 
       // Bounding box koordinater
       const bbox = [58.76968, 5.58000, 59.23730, 7.00274];
+      const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
       
       // Legg til MapTiler Geocoding kontroll
       L.control.maptilerGeocoding({ 
         apiKey: key,
-        bbox: bbox
+        bbox: bboxflipped
       }).addTo(map);
 
       // Tegn bounding box på kartet
