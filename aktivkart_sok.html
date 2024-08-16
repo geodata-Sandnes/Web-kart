@@ -49,6 +49,8 @@
       L.control.maptilerGeocoding({ 
         apiKey: apiKey,
         bbox: bboxflipped,
+        country:"NO",
+        types:['address','city','place','poi'],
         position: 'topleft'
       }).addTo(map);
 
