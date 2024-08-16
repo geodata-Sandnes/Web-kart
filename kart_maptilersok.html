@@ -46,7 +46,12 @@
         crossOrigin: true
       }).addTo(map);
 
-      L.control.maptilerGeocoding({ apiKey: key, municipality:"Sandnes" }).addTo(map);
+      L.control.maptilerGeocoding({ 
+        apiKey: key, 
+        country:"NO",
+        county:"Rogaland",
+        municipality:"Sandnes" 
+      }).addTo(map);
     </script>
   </body>
 </html>
