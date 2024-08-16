@@ -27,14 +27,36 @@
     <script>
         console.log(testtekst);
         
-        const map = L.map('map', {
-        maxZoom: 18,
-        minZoom: 8,
+        const apiKey = "eQ1llFLMd4Gy0FanhV62";
+
+        const map = L.map("map", {
+            maxZoom: 18,
+            minZoom: 8,
         }).setView([58.8464, 5.7438], 9);
+
+        const scale = devicePixelRatio > 1.5 ? "@2x" : "";
         const mtLayer = L.maptilerLayer({
-        apiKey: "eQ1llFLMd4Gy0FanhV62",
-        style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
-      }).addTo(map);
+            apiKey: apiKey,
+            style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
+        }).addTo(map);
+
+        const bboxflipped = [5.58000, 58.76968, 7.00274, 59.23730];
+
+        L.rectangle(bounds, {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map);
+
+        map.fitBounds(bounds);
+
+        L.control.maptilerGeocoding({
+            apiKey: apiKey,
+            bbox: bboxflipped,
+            country: "NO",
+            types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
+            position: 'topleft'
+        }).addTo(map);
+
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             publicCluster = L.layerGroup(),
