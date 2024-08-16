@@ -44,14 +44,7 @@
 
         const bboxflipped = [5.58000, 58.76968, 7.00274, 59.23730];
 
-        L.control.maptilerGeocoding({
-            apiKey: apiKey,
-            bbox: bboxflipped,
-            collapsed:true,
-            country: "NO",
-            types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
-            position: 'topleft'
-        }).addTo(map);
+
 
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
@@ -152,6 +145,14 @@
                 marker.openPopup();
             }
         }
+        L.control.maptilerGeocoding({
+            apiKey: apiKey,
+            bbox: bboxflipped,
+            collapsed:true,
+            country: "NO",
+            types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
+            position: 'topleft'
+        }).addTo(map);
     </script>
 </body>
 </html>

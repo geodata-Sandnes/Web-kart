@@ -42,14 +42,7 @@ const mtLayer = L.maptilerLayer({
 }).addTo(map);
 
 const bboxflipped = [5.58000, 58.76968, 7.00274, 59.23730];
-L.control.maptilerGeocoding({
-    apiKey: apiKey,
-    collapsed:true,
-    bbox: bboxflipped,
-    country: "NO",
-    types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
-    position: 'topleft'
-}).addTo(map);
+
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             alle_lag = L.layerGroup(),
@@ -121,6 +114,15 @@ L.control.maptilerGeocoding({
         control.addOverlay(veiparkeringsforbud, 'Parkering forbudt');
         control.addBaseLayer(hc_lag, 'HC-parkering');
         control.addTo(map);
+
+    L.control.maptilerGeocoding({
+    apiKey: apiKey,
+    collapsed:true,
+    bbox: bboxflipped,
+    country: "NO",
+    types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
+    position: 'topleft'
+}).addTo(map);
     </script>
 </body>
 </html>
