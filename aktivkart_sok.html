@@ -215,8 +215,8 @@
         L.control.layers.tree(overlays, null).addTo(map);
         L.control.maptilerGeocoding({ 
         apiKey: apiKey,
-
-        bbox: bboxflipped
+        bbox: bboxflipped,
+        position: 'topleft'
       }).addTo(map);
 
     </script>
