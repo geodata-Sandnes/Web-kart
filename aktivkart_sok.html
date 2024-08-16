@@ -122,7 +122,12 @@
             }
             return markers;
         }
-
+        const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
+        L.control.layers.tree(overlays, null).addTo(map);
+        L.control.maptilerGeocoding({ 
+        apiKey: apiKey,
+        bbox: bboxflipped,
+      }).addTo(map);
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
@@ -211,13 +216,7 @@
                 }
             ]
         };
-        const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
-        L.control.layers.tree(overlays, null).addTo(map);
-        L.control.maptilerGeocoding({ 
-        apiKey: apiKey,
-        bbox: bboxflipped,
-        position: 'topleft'
-      }).addTo(map);
+
 
     </script>
 </body>
