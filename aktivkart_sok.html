@@ -215,8 +215,9 @@
         L.control.layers.tree(overlays, null).addTo(map);
         L.control.maptilerGeocoding({ 
         apiKey: apiKey,
+
         bbox: bboxflipped
-      }).addTo(map);
+      }).addTo(map,"top-left");
       const southWest = L.latLng(bbox[0], bbox[1]);
       const northEast = L.latLng(bbox[2], bbox[3]);
       const bounds = L.latLngBounds(southWest, northEast);
