@@ -46,11 +46,12 @@
       const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
 
 
+
       L.control.maptilerGeocoding({ 
         apiKey: apiKey,
         bbox: bboxflipped,
         country:"NO",
-        types:'address,city,place,poi',
+        types: ["poi","address"],
         position: 'topleft'
       }).addTo(map);
 
