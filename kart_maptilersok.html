@@ -46,14 +46,13 @@
         crossOrigin: true
       }).addTo(map);
 
-      var bbox =[58.76968, 5.58000,59.23730, 7.00274];
+      var bbox =[58.76968,5.58000,59.23730,7.00274];
 
       L.control.maptilerGeocoding({ 
         apiKey: key,
         bbox: bbox
       }).addTo(map);
 
-      window.rectangle = L.rectangle(bbox, { color: "#ff7800", weight: 1 }).addTo(map);
     </script>
   </body>
 </html>
