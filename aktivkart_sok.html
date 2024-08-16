@@ -212,7 +212,7 @@
 
         L.control.layers.tree(overlays, null).addTo(map);
         L.control.maptilerGeocoding({ 
-        apiKey: key,
+        apiKey: apiKey,
         bbox: bboxflipped
       }).addTo(map);
       const southWest = L.latLng(bbox[0], bbox[1]);
