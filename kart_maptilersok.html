@@ -46,9 +46,14 @@
         crossOrigin: true
       }).addTo(map);
 
+      var bbox = L.latLngBounds([
+        [58.76968, 5.58000],
+        [59.23730, 7.00274]
+        ]);
+
       L.control.maptilerGeocoding({ 
         apiKey: key,
-        bbox: [58.8491, 5.6337, 58.9463, 5.7892]  // Bounding box for Sandnes kommune
+        bbox: bbox
       }).addTo(map);
     </script>
   </body>
