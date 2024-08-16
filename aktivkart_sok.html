@@ -30,31 +30,40 @@
         <div id="map"></div>
     </div>
     <script>
+        const apiKey = "eQ1llFLMd4Gy0FanhV62";
 
-        const apiKey = "eQ1llFLMd4Gy0FanhV62"
-        console.log(testtekst);
-        const map = L.map("map",{
+        const map = L.map("map", {
             maxZoom: 18,
             minZoom: 8,
-        }).setView([58.8464, 5.7438],9);
+        }).setView([58.8464, 5.7438], 9);
+
         const scale = devicePixelRatio > 1.5 ? "@2x" : "";
         const mtLayer = L.maptilerLayer({
-        apiKey: apiKey,
-        style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
-      }).addTo(map);
+            apiKey: apiKey,
+            style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
+        }).addTo(map);
 
-      const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
+        const bboxflipped = [5.58000, 58.76968, 7.00274, 59.23730];
 
+        // Tegn bbox-rektangelet på kartet
+        const southWest = L.latLng(bboxflipped[1], bboxflipped[0]);
+        const northEast = L.latLng(bboxflipped[3], bboxflipped[2]);
+        const bounds = L.latLngBounds(southWest, northEast);
 
+        L.rectangle(bounds, {
+            color: "#ff7800",
+            weight: 1
+        }).addTo(map);
 
-      L.control.maptilerGeocoding({ 
-        apiKey: apiKey,
-        bbox: bboxflipped,
-        country:"NO",
-        types: ["poi","road","address","postal_code","place","neighbourhood","locality"],
-        position: 'topleft'
-      }).addTo(map);
+        map.fitBounds(bounds);
 
+        L.control.maptilerGeocoding({
+            apiKey: apiKey,
+            bbox: bboxflipped,
+            country: "NO",
+            types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
+            position: 'topleft'
+        }).addTo(map);
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             group_all_Cluster = L.layerGroup(),
@@ -226,7 +235,6 @@
         };
         
         L.control.layers.tree(overlays, null).addTo(map);
-
 
     </script>
 </body>
