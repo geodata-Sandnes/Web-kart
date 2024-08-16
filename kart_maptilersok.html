@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maplibre Example</title>
-  
-  <!-- Maplibre GL CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
-  
-  <!-- Maptiler Geocoding Control CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/@maptiler/geocoding-control@2.0.0/dist/style.css" rel="stylesheet" />
-</head>
-<body>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
-  <div id="map" style="width: 100%; height: 100vh;"></div>
+    <title>MapTiler Geocoding control</title>
 
-  <!-- Maplibre GL JS -->
-  <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
-  
-  <!-- Maptiler Geocoding Control JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@maptiler/geocoding-control@2.0.0/dist/maptiler-geocoding-control.min.js"></script>
-  
-  <script>
-    // Your map initialization code
-    const map = new maplibregl.Map({
-      container: 'map', // container ID
-      style: 'https://api.maptiler.com/maps/basic/style.json?key=eQ1llFLMd4Gy0FanhV62',
-      center: [0, 0], // starting position [lng, lat]
-      zoom: 2 // starting zoom
-    });
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-    // Add geocoding control to the map
-    const geocodingControl = new GeocodingControl({
-      apiKey: "eQ1llFLMd4Gy0FanhV62"
-    });
-    map.addControl(geocodingControl, 'top-right');
-  </script>
+    <link href="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/style.css" rel="stylesheet">
+    <script src="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/leaflet.umd.js"></script>
 
-</body>
+    <style>
+      body { margin: 0; padding: 0; }
+      #map { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+      #map > a { position:absolute; left: 10px; bottom: 10px; z-index: 999; }
+    </style>
+  </head>
+
+  <body>
+    <div id="map">
+      <a href="https://www.maptiler.com">
+        <img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo">
+      </a>
+    </div>
+
+    <p>
+      <a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>
+      <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>
+    </p>
+
+    <script>
+      const key = "eQ1llFLMd4Gy0FanhV62";
+
+      const map = L.map("map").fitBounds([[-65, -160], [65, 160]]);
+
+      const scale = devicePixelRatio > 1.5 ? "@2x" : "";
+
+      L.tileLayer(`https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}${scale}.png?key=${key}`, {
+        tileSize: 512,
+        zoomOffset: -1,
+        minZoom: 1,
+        attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a>, ' +
+          '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+        crossOrigin: true
+      }).addTo(map);
+
+      L.control.maptilerGeocoding({ apiKey: key }).addTo(map);
+    </script>
+  </body>
 </html>
