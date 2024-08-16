@@ -153,13 +153,7 @@
             .catch(error => {
                 console.error('Error fetching the JSON data:', error);
             });
-        const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
-        L.control.layers.tree(overlays, null).addTo(map);
-        L.control.maptilerGeocoding({ 
-        apiKey: apiKey,
 
-        bbox: bboxflipped
-      }).addTo(map);
         var overlays = {
             label: "<strong>Aktiviteter</strong>",
             children: [
@@ -217,7 +211,13 @@
                 }
             ]
         };
+        const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
+        L.control.layers.tree(overlays, null).addTo(map);
+        L.control.maptilerGeocoding({ 
+        apiKey: apiKey,
 
+        bbox: bboxflipped
+      }).addTo(map);
 
     </script>
 </body>
