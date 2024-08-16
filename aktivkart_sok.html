@@ -42,7 +42,12 @@
         apiKey: apiKey,
         style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
       }).addTo(map);
-
+      const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
+        L.control.layers.tree(overlays, null).addTo(map);
+        L.control.maptilerGeocoding({ 
+        apiKey: apiKey,
+        bbox: bboxflipped,
+      }).addTo(map);
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             group_all_Cluster = L.layerGroup(),
             group_annet_Cluster = L.layerGroup(),
@@ -122,12 +127,7 @@
             }
             return markers;
         }
-        const bboxflipped = [5.58000,58.76968, 7.00274,59.23730];
-        L.control.layers.tree(overlays, null).addTo(map);
-        L.control.maptilerGeocoding({ 
-        apiKey: apiKey,
-        bbox: bboxflipped,
-      }).addTo(map);
+
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
