@@ -46,6 +46,7 @@
         const bboxflipped = [5.58000, 58.76968, 7.00274, 59.23730];
         L.control.maptilerGeocoding({
             apiKey: apiKey,
+            collapsed:true,
             bbox: bboxflipped,
             country: "NO",
             types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
