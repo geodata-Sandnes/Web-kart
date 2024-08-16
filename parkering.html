@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.css"/>
     <link rel="stylesheet" href="css/MarkerCluster.Default.css"/>
+    <link href="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/style.css" rel="stylesheet">
     <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.css" rel="stylesheet" />
     <script src="js/leaflet.js"></script>
     <script src="js/leaflet.markercluster.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster.layersupport@2.0.1/dist/leaflet.markercluster.layersupport-src.js"></script>
     <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.0.3/maptiler-sdk.umd.js"></script>
     <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+    <script src="https://cdn.maptiler.com/maptiler-geocoding-control/v1.3.2/leaflet.umd.js"></script>
     <style>
         #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
         .subtle { font-weight: bold; color: gray; }
@@ -26,15 +28,28 @@
     </div>
     <script src="js/variables_parkdata.js"></script>
     <script>
-        console.log(testtekst)
-        const map = L.map('map', {
-        maxZoom: 18,
-        minZoom: 8,
-        }).setView([58.8464, 5.7438], 9);
-        const mtLayer = L.maptilerLayer({
-        apiKey: "eQ1llFLMd4Gy0FanhV62",
-        style: "https://api.maptiler.com/maps/bfc44e65-e023-475f-9cd0-602767bda151/style.json?key=eQ1llFLMd4Gy0FanhV62",
-      }).addTo(map);
+        const apiKey = "eQ1llFLMd4Gy0FanhV62";
+
+const map = L.map("map", {
+    maxZoom: 18,
+    minZoom: 8,
+}).setView([58.8464, 5.7438], 9);
+
+const scale = devicePixelRatio > 1.5 ? "@2x" : "";
+const mtLayer = L.maptilerLayer({
+    apiKey: apiKey,
+    style: "https://api.maptiler.com/maps/basic-v2/style.json?key=eQ1llFLMd4Gy0FanhV62",
+}).addTo(map);
+
+const bboxflipped = [5.58000, 58.76968, 7.00274, 59.23730];
+L.control.maptilerGeocoding({
+    apiKey: apiKey,
+    collapsed:true,
+    bbox: bboxflipped,
+    country: "NO",
+    types: ["poi", "road", "address", "postal_code", "place", "neighbourhood", "locality"],
+    position: 'topleft'
+}).addTo(map);
 
         var mcgLayerSupportGroup = L.markerClusterGroup.layerSupport(),
             alle_lag = L.layerGroup(),
