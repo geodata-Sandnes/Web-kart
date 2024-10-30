@@ -58,7 +58,7 @@
             "attributes": {
                 "OBJECTID": 1,
                 "Navn": "Åpen internasjonal kulturbarnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/apen-internasjonal-kulturbarnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/apen-internasjonal-kulturbarnehage/",
                 "Gatenavn": "Holbergsgate",
                 "Husnummer": "23",
                 "Bokstav": null,
@@ -153,7 +153,7 @@
             "attributes": {
                 "OBJECTID": 12,
                 "Navn": "Sandvedhaugen barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sandvedhaugen-barnehage2/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/sandved-barnehage/",
                 "Gatenavn": "Gamle Asheimvei",
                 "Husnummer": "15",
                 "Bokstav": null,
@@ -229,7 +229,7 @@
             "attributes": {
                 "OBJECTID": 16,
                 "Navn": "Brueland barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/brueland-barnehage2/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/brueland-barnehage/",
                 "Gatenavn": "Samuel J. Sandvedsvei",
                 "Husnummer": "2-4",
                 "Bokstav": null,
@@ -248,7 +248,7 @@
             "attributes": {
                 "OBJECTID": 17,
                 "Navn": "Stangeland barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skeiane-barnehagene-avdeling-stangeland-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/stangeland-barnehage/",
                 "Gatenavn": "Agneveien",
                 "Husnummer": "1",
                 "Bokstav": null,
@@ -305,7 +305,7 @@
             "attributes": {
                 "OBJECTID": 20,
                 "Navn": "Ganddal barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/ganddal-barnehagene-avdeling-Ganddal-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/ganddal-barnehage/",
                 "Gatenavn": "Kvålveien",
                 "Husnummer": "11",
                 "Bokstav": null,
@@ -324,7 +324,7 @@
             "attributes": {
                 "OBJECTID": 21,
                 "Navn": "Varatun barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/varatun-barnehagene2/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/varatun-barnehage/",
                 "Gatenavn": "Postveien",
                 "Husnummer": "136",
                 "Bokstav": null,
@@ -343,7 +343,7 @@
             "attributes": {
                 "OBJECTID": 22,
                 "Navn": "Gravarslia barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/austsia-barnehagene-avdeling-gravarslia-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/gravarslia-barnehage/",
                 "Gatenavn": "Gravarstunet",
                 "Husnummer": "2",
                 "Bokstav": null,
@@ -419,7 +419,7 @@
             "attributes": {
                 "OBJECTID": 26,
                 "Navn": "Figgjoelva barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/figgjoelva-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/figgjoelva-barnehage/",
                 "Gatenavn": "Tjessheimveien",
                 "Husnummer": "8",
                 "Bokstav": null,
@@ -457,7 +457,7 @@
             "attributes": {
                 "OBJECTID": 28,
                 "Navn": "Sørbø barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/ganddal-barnahagene-sorbo-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/sorbo-barnehage-sor/",
                 "Gatenavn": "Sørbøveien",
                 "Husnummer": "59",
                 "Bokstav": null,
@@ -495,7 +495,7 @@
             "attributes": {
                 "OBJECTID": 30,
                 "Navn": "Langgata barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sentrumsbarnehagene-avdeling-langgata-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/langgata-barnehage/",
                 "Gatenavn": "Langgata",
                 "Husnummer": "74",
                 "Bokstav": null,
@@ -514,7 +514,7 @@
             "attributes": {
                 "OBJECTID": 31,
                 "Navn": "Kleivane barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sor-ost-barnehagene-avdeling-kleivane-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/kleivane-barnehage/",
                 "Gatenavn": "Kvernhusbakken",
                 "Husnummer": "1",
                 "Bokstav": null,
@@ -590,7 +590,7 @@
             "attributes": {
                 "OBJECTID": 35,
                 "Navn": "Figgjo barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/Sor-ost-barnehagene-avdeling-figgjo-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/figgjo-barnehage/",
                 "Gatenavn": "Utslåtten",
                 "Husnummer": "2",
                 "Bokstav": "A",
@@ -628,7 +628,7 @@
             "attributes": {
                 "OBJECTID": 37,
                 "Navn": "Rabalder barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/rabalder-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/rabalder-barnehage/",
                 "Gatenavn": "Porsmyrveien",
                 "Husnummer": "7",
                 "Bokstav": null,
@@ -666,7 +666,7 @@
             "attributes": {
                 "OBJECTID": 39,
                 "Navn": "Trones barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sentrumsbarnehagene-avdeling-trones-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/trones-barnehage/",
                 "Gatenavn": "Postveien",
                 "Husnummer": "63",
                 "Bokstav": null,
@@ -685,7 +685,7 @@
             "attributes": {
                 "OBJECTID": 40,
                 "Navn": "Myklaberget barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/gandsfjord-barnehagene-avdeling-myklaberget-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/myklaberget-barnehage/",
                 "Gatenavn": "Smørbukkveien",
                 "Husnummer": "11",
                 "Bokstav": null,
@@ -742,7 +742,7 @@
             "attributes": {
                 "OBJECTID": 43,
                 "Navn": "Hommersåk barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/riska-barnehagene-avdeling-hommersak-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/hommersak-barnehage/",
                 "Gatenavn": "Teineveien",
                 "Husnummer": "2",
                 "Bokstav": null,
@@ -761,7 +761,7 @@
             "attributes": {
                 "OBJECTID": 44,
                 "Navn": "Austrått barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sor-ost-barnehagene-avdeling-austratt-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/austratt-barnehage/",
                 "Gatenavn": "Øygardsveien",
                 "Husnummer": "162",
                 "Bokstav": null,
@@ -780,7 +780,7 @@
             "attributes": {
                 "OBJECTID": 45,
                 "Navn": "Jønningheia barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skogsheia-barnehagene-avdeling-jonningheia-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/jonningheia-barnehage/",
                 "Gatenavn": "Tulipanveien",
                 "Husnummer": "13",
                 "Bokstav": null,
@@ -799,7 +799,7 @@
             "attributes": {
                 "OBJECTID": 46,
                 "Navn": "Riska barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/riska-barnehagene-avdeling-riska-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/riska-barnehage/",
                 "Gatenavn": "Kydnaveien",
                 "Husnummer": "33",
                 "Bokstav": null,
@@ -837,7 +837,7 @@
             "attributes": {
                 "OBJECTID": 48,
                 "Navn": "Vatne barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/austsia-barnehagene-avdeling-vatne-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/vatne-barnehage/",
                 "Gatenavn": "Skytebaneveien",
                 "Husnummer": "15",
                 "Bokstav": null,
@@ -856,7 +856,7 @@
             "attributes": {
                 "OBJECTID": 49,
                 "Navn": "Porsholen barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/gandsfjord-barnehagene-avdeling-porsholen-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/porsholen-barnehage/",
                 "Gatenavn": "Porsmyrveien",
                 "Husnummer": "35",
                 "Bokstav": null,
@@ -875,7 +875,7 @@
             "attributes": {
                 "OBJECTID": 50,
                 "Navn": "Høle barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/hole-barnehage2/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/hole-barnehage/",
                 "Gatenavn": "Apalstøveien",
                 "Husnummer": "28",
                 "Bokstav": null,
@@ -970,7 +970,7 @@
             "attributes": {
                 "OBJECTID": 55,
                 "Navn": "Rissebærstraen barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/gandsfjord-barnehagene-avdeling-rissebarstraen-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/rissebarstraen-barnehage/",
                 "Gatenavn": "Sjøveien",
                 "Husnummer": "9",
                 "Bokstav": null,
@@ -1008,7 +1008,7 @@
             "attributes": {
                 "OBJECTID": 57,
                 "Navn": "Stangelandsforen barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skeiane-barnehagene-avdeling-stangelandsforen-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/stangelandsforen-barnehage/",
                 "Gatenavn": "Grovene",
                 "Husnummer": "2",
                 "Bokstav": null,
@@ -1084,7 +1084,7 @@
             "attributes": {
                 "OBJECTID": 61,
                 "Navn": "Smeaheia barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skogsheia-barnehagene-avdeling-smeaheia-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/smeaheia-barnehage/",
                 "Gatenavn": "Kjærholen",
                 "Husnummer": "3",
                 "Bokstav": null,
@@ -1122,7 +1122,7 @@
             "attributes": {
                 "OBJECTID": 63,
                 "Navn": "Øygard barnehage",
-                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/austsia-barnehagene-avdeling-oygard-barnehage/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/oygard-barnehage/",
                 "Gatenavn": "Øygardsveien",
                 "Husnummer": "21",
                 "Bokstav": null,
