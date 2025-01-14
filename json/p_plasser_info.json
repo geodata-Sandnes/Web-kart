@@ -13285,9 +13285,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 0,
             "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er ikke opparbeidet HC-plasser eller ladeplasser da dette finnes ikke langt fra P-plassen.",
-            "aktiveringstidspunkt": "2024-02-02T07:31:56Z",
-            "sistEndret": "2024-02-02T07:31:56Z",
-            "skiltplanId": 125727,
+            "aktiveringstidspunkt": "2025-01-07T14:16:16Z",
+            "sistEndret": "2025-01-07T14:16:16Z",
+            "skiltplanId": 152986,
             "links": [
                 {
                     "rel": "self",
@@ -13295,10 +13295,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/70633/versjon/2/skiltplan/125727/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/70633/versjon/3/skiltplan/152986/skiltplan"
                 }
             ],
-            "versjonsnummer": 2,
+            "versjonsnummer": 3,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "LANGS_KJOREBANE",
@@ -13333,6 +13333,38 @@
                 ],
                 "versjonsnummer": 1,
                 "sluttidspunkt": "2024-02-02T07:31:56Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "A48 Havnegata",
+                "referanse": null,
+                "adresse": null,
+                "postnummer": "4306",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 4,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er ikke opparbeidet HC-plasser eller ladeplasser da dette finnes ikke langt fra P-plassen.",
+                "aktiveringstidspunkt": "2024-02-02T07:31:56Z",
+                "sistEndret": "2024-02-02T07:31:56Z",
+                "skiltplanId": 125727,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/70633"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/70633/versjon/2/skiltplan/125727/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 2,
+                "sluttidspunkt": "2025-01-07T14:16:16Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "LANGS_KJOREBANE",
                 "innfartsparkering": "NEI",
@@ -14364,6 +14396,48 @@
                 "handhever": null
             }
         ]
+    },
+    {
+        "id": 95139,
+        "parkeringstilbyderId": 23,
+        "parkeringstilbyderNavn": "AIMO PARK NORWAY AS",
+        "parkeringstilbyderOrganisasjonsnummer": "946359106",
+        "breddegrad": 58.847162,
+        "lengdegrad": 5.735534,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Skeiane stasjon",
+            "referanse": "2932",
+            "adresse": "Hoveveien 1",
+            "postnummer": "4306",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 25,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 0,
+            "vurderingForflytningshemmede": "Kun reserverte plasser.\n",
+            "aktiveringstidspunkt": "2025-01-07T10:59:50Z",
+            "sistEndret": "2025-01-07T10:59:50Z",
+            "skiltplanId": 152985,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/95139"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/95139/versjon/1/skiltplan/152985/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "JA",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
     },
     {
         "id": 83968,
