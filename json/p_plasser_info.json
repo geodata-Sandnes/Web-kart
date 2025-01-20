@@ -1233,20 +1233,20 @@
         "lengdegrad": 5.731326,
         "deaktivert": null,
         "aktivVersjon": {
-            "navn": "HS-bygget - HaakonVIIs gate 6",
+            "navn": " Haakon7.s gate ",
             "referanse": "PRIVAT-17",
             "adresse": "Haakon 7's gate 6",
             "postnummer": "4306",
             "poststed": "SANDNES",
-            "antallAvgiftsbelagtePlasser": 10,
+            "antallAvgiftsbelagtePlasser": 9,
             "antallAvgiftsfriePlasser": 0,
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
-            "antallForflytningshemmede": 1,
-            "vurderingForflytningshemmede": "Området er abonnementsområde for ansatte i Sandnes kommune. Man har vurdert behovet for HC-plasser i samsvar med §61 og 62, og finner at dagens behov er dekket. Utformingen tilfredsstiller kravene i §63. For besøkende  det er det flere offentlige HC-plasser i Haakon VIIs gate. Ladestasjon er foreløpig ikke aktuelt, da kommunen vurderer flytting til andre lokaliteter.",
-            "aktiveringstidspunkt": "2024-02-02T12:50:04Z",
-            "sistEndret": "2024-02-02T12:50:04Z",
-            "skiltplanId": 125751,
+            "antallForflytningshemmede": 0,
+            "vurderingForflytningshemmede": "Området er abonnementsområde for ansatte i Sandnes kommune. Det er ikke opparbeidet ladestasjoner, da dette ikke er nødvendig",
+            "aktiveringstidspunkt": "2025-01-16T14:02:47Z",
+            "sistEndret": "2025-01-16T14:02:47Z",
+            "skiltplanId": 153673,
             "links": [
                 {
                     "rel": "self",
@@ -1254,10 +1254,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59667/versjon/3/skiltplan/125751/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59667/versjon/4/skiltplan/153673/skiltplan"
                 }
             ],
-            "versjonsnummer": 3,
+            "versjonsnummer": 4,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -1324,6 +1324,38 @@
                 ],
                 "versjonsnummer": 2,
                 "sluttidspunkt": "2024-02-02T12:50:04Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "HS-bygget - HaakonVIIs gate 6",
+                "referanse": "PRIVAT-17",
+                "adresse": "Haakon 7's gate 6",
+                "postnummer": "4306",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 10,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 1,
+                "vurderingForflytningshemmede": "Området er abonnementsområde for ansatte i Sandnes kommune. Man har vurdert behovet for HC-plasser i samsvar med §61 og 62, og finner at dagens behov er dekket. Utformingen tilfredsstiller kravene i §63. For besøkende  det er det flere offentlige HC-plasser i Haakon VIIs gate. Ladestasjon er foreløpig ikke aktuelt, da kommunen vurderer flytting til andre lokaliteter.",
+                "aktiveringstidspunkt": "2024-02-02T12:50:04Z",
+                "sistEndret": "2024-02-02T12:50:04Z",
+                "skiltplanId": 125751,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59667"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59667/versjon/3/skiltplan/125751/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 3,
+                "sluttidspunkt": "2025-01-16T14:02:47Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
@@ -2259,9 +2291,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 7,
             "vurderingForflytningshemmede": "Behovet for HC-plasser på området er vurdert, og vi finner at behovet er dekket med det antall plasser området har i dag. Plassene er korrekt utformet. I tillegg til de tre HC-plassene er det flere ordinære plasser som egner seg til inn/utlasting av rullestol gjennom bakdør eller sidedør, og som enkelt kan skiltes om til HC-plasser dersom behovet skulle endre seg. Vi har aldri mottatt klager på at antallet HC-plasser er for lavt på dette området.",
-            "aktiveringstidspunkt": "2024-04-03T12:16:02Z",
-            "sistEndret": "2024-04-03T12:16:02Z",
-            "skiltplanId": 130075,
+            "aktiveringstidspunkt": "2025-01-16T14:13:11Z",
+            "sistEndret": "2025-01-16T14:13:11Z",
+            "skiltplanId": 153687,
             "links": [
                 {
                     "rel": "self",
@@ -2269,10 +2301,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59810/versjon/2/skiltplan/130075/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59810/versjon/3/skiltplan/153687/skiltplan"
                 }
             ],
-            "versjonsnummer": 2,
+            "versjonsnummer": 3,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -2307,6 +2339,38 @@
                 ],
                 "versjonsnummer": 1,
                 "sluttidspunkt": "2024-04-03T12:16:02Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "Hana Sanz",
+                "referanse": null,
+                "adresse": "Hanaveien 17",
+                "postnummer": "4327",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 184,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 7,
+                "vurderingForflytningshemmede": "Behovet for HC-plasser på området er vurdert, og vi finner at behovet er dekket med det antall plasser området har i dag. Plassene er korrekt utformet. I tillegg til de tre HC-plassene er det flere ordinære plasser som egner seg til inn/utlasting av rullestol gjennom bakdør eller sidedør, og som enkelt kan skiltes om til HC-plasser dersom behovet skulle endre seg. Vi har aldri mottatt klager på at antallet HC-plasser er for lavt på dette området.",
+                "aktiveringstidspunkt": "2024-04-03T12:16:02Z",
+                "sistEndret": "2024-04-03T12:16:02Z",
+                "skiltplanId": 130075,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59810"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/59810/versjon/2/skiltplan/130075/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 2,
+                "sluttidspunkt": "2025-01-16T14:13:11Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
