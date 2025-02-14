@@ -2398,9 +2398,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 0,
             "vurderingForflytningshemmede": "Parkering for hotell gjester. Det er 5 plasser mot avgift mot Storgata og det er 6 plasser med forhåndsbetalt parkeringskort som ligger i Ole Jacob Brochs gate. Det er ikke opparbeidet plasser for HC eller ladeplasser da dette finnes ikke så langt fra området.",
-            "aktiveringstidspunkt": "2024-09-27T17:44:29Z",
-            "sistEndret": "2024-09-27T17:44:29Z",
-            "skiltplanId": 143312,
+            "aktiveringstidspunkt": "2025-01-28T12:30:37Z",
+            "sistEndret": "2025-01-28T12:30:37Z",
+            "skiltplanId": 154589,
             "links": [
                 {
                     "rel": "self",
@@ -2408,17 +2408,50 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/90929/versjon/1/skiltplan/143312/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/90929/versjon/2/skiltplan/154589/skiltplan"
                 }
             ],
-            "versjonsnummer": 1,
+            "versjonsnummer": 2,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "LANGS_KJOREBANE",
             "innfartsparkering": "NEI",
             "handhever": null
         },
-        "historiskeVersjoner": []
+        "historiskeVersjoner": [
+            {
+                "navn": "A101 Hotell Sverre",
+                "referanse": null,
+                "adresse": "Storgata 47",
+                "postnummer": "4307",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 11,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Parkering for hotell gjester. Det er 5 plasser mot avgift mot Storgata og det er 6 plasser med forhåndsbetalt parkeringskort som ligger i Ole Jacob Brochs gate. Det er ikke opparbeidet plasser for HC eller ladeplasser da dette finnes ikke så langt fra området.",
+                "aktiveringstidspunkt": "2024-09-27T17:44:29Z",
+                "sistEndret": "2024-09-27T17:44:29Z",
+                "skiltplanId": 143312,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/90929"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/90929/versjon/1/skiltplan/143312/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 1,
+                "sluttidspunkt": "2025-01-28T12:30:37Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            }
+        ]
     },
     {
         "id": 93494,
@@ -3069,6 +3102,48 @@
                 "handhever": null
             }
         ]
+    },
+    {
+        "id": 96416,
+        "parkeringstilbyderId": 121,
+        "parkeringstilbyderNavn": "APCOA NORWAY AS",
+        "parkeringstilbyderOrganisasjonsnummer": "929292065",
+        "breddegrad": 58.851374,
+        "lengdegrad": 5.733649,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Øglændkvartalet",
+            "referanse": "3849",
+            "adresse": "Langgata 9",
+            "postnummer": "4306",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 70,
+            "antallAvgiftsfriePlasser": 0,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 2,
+            "vurderingForflytningshemmede": "2 plasser er skiltet for og forbeholdt for forflytningshemmede med offentlig p-bevis på området. Disse er oppmerket i forskriftsmessig størrelse. De merkede plassene er på hver sin ende av p-plassen og må således sies å betjene kringliggende områder godt. ",
+            "aktiveringstidspunkt": "2025-01-31T11:00:00Z",
+            "sistEndret": "2025-01-30T13:24:24Z",
+            "skiltplanId": 155722,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/96416"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/96416/versjon/1/skiltplan/155722/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
     },
     {
         "id": 40076,
@@ -6692,10 +6767,10 @@
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 1,
-            "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er en HC-plass som er regulert med maks 2 timer. Det er ikke ladeplasser.",
-            "aktiveringstidspunkt": "2024-01-11T08:02:03Z",
-            "sistEndret": "2024-01-11T08:02:03Z",
-            "skiltplanId": 123867,
+            "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er en HC-plass som er regulert med maks 2 timer. Det er ikke ladeplasser. Det er opparbeidet 1 plass til liten elektrisk motorvogn",
+            "aktiveringstidspunkt": "2025-01-30T14:06:58Z",
+            "sistEndret": "2025-01-30T14:06:58Z",
+            "skiltplanId": 155717,
             "links": [
                 {
                     "rel": "self",
@@ -6703,10 +6778,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72331/versjon/2/skiltplan/123867/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72331/versjon/3/skiltplan/155717/skiltplan"
                 }
             ],
-            "versjonsnummer": 2,
+            "versjonsnummer": 3,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "LANGS_KJOREBANE",
@@ -6741,6 +6816,38 @@
                 ],
                 "versjonsnummer": 1,
                 "sluttidspunkt": "2024-01-11T08:02:03Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "A1 Kirkegata",
+                "referanse": null,
+                "adresse": "Kirkegata ",
+                "postnummer": "4307",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 5,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 1,
+                "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er en HC-plass som er regulert med maks 2 timer. Det er ikke ladeplasser.",
+                "aktiveringstidspunkt": "2024-01-11T08:02:03Z",
+                "sistEndret": "2024-01-11T08:02:03Z",
+                "skiltplanId": 123867,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72331"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72331/versjon/2/skiltplan/123867/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 2,
+                "sluttidspunkt": "2025-01-30T14:06:58Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "LANGS_KJOREBANE",
                 "innfartsparkering": "NEI",
@@ -14381,81 +14488,6 @@
                 "sluttidspunkt": "2024-10-08T12:36:44Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "PARKERINGSHUS",
-                "innfartsparkering": "NEI",
-                "handhever": null
-            }
-        ]
-    },
-    {
-        "id": 52003,
-        "parkeringstilbyderId": 23,
-        "parkeringstilbyderNavn": "AIMO PARK NORWAY AS",
-        "parkeringstilbyderOrganisasjonsnummer": "946359106",
-        "breddegrad": 58.850951,
-        "lengdegrad": 5.734619,
-        "deaktivert": null,
-        "aktivVersjon": {
-            "navn": "Langgata 9-11",
-            "referanse": "2928",
-            "adresse": "Erling Skjalgsons gate 2C",
-            "postnummer": "4307",
-            "poststed": "SANDNES",
-            "antallAvgiftsbelagtePlasser": 60,
-            "antallAvgiftsfriePlasser": 0,
-            "antallLadeplasser": 2,
-            "merknadLadeplasser": "Aimo Parks vurdering er at det er tilstrekkelig antall plasser for ladbar motorvogn på dette p-anlegget.",
-            "antallForflytningshemmede": 2,
-            "vurderingForflytningshemmede": "Iht parkeringsforskriften § 62 er det foretatt følgende vurdering i forbindelse med etablering av vilkårsparkering på det angitte område. Det er anlagt 2 HC plasser uten tidsbegrensning. Antall HC plasser bygger på lokal kunnskap knyttet til bruken av disse plassene. Samlet sett tilfredsstiller Aimo Park kravet etter § 61. Parkeringsområdet er ikke universelt utformet per dags dato, men HC plasser gis best mulig plassering sett i forhold til tilbudet plassene er ment å betjene. Korrekt tilpasning av str. på HC plasser er utført. Anlegget iht. § 63 og normale plasser gis alminnelig lengde for å optimalisere arealbruken og for å kunne sikre plassene en mest optimal plassering sett i forhold til tilbudet plassene er ment å betjene. Dette gjøres ved at man på annen måte sikrer tilgjengelighet for side og bakmontert rullestolheis ut mot manøvreringsareal. \n",
-            "aktiveringstidspunkt": "2024-10-08T12:37:46Z",
-            "sistEndret": "2024-10-08T12:37:46Z",
-            "skiltplanId": 75613,
-            "links": [
-                {
-                    "rel": "self",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/52003"
-                },
-                {
-                    "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/52003/versjon/2/skiltplan/75613/skiltplan"
-                }
-            ],
-            "versjonsnummer": 2,
-            "sluttidspunkt": null,
-            "opplastetVurderingId": 0,
-            "typeParkeringsomrade": "AVGRENSET_OMRADE",
-            "innfartsparkering": "NEI",
-            "handhever": null
-        },
-        "historiskeVersjoner": [
-            {
-                "navn": "Langgata 9-11",
-                "referanse": "2928",
-                "adresse": "Erling Skjalgsons gate 2C",
-                "postnummer": "4307",
-                "poststed": "SANDNES",
-                "antallAvgiftsbelagtePlasser": 60,
-                "antallAvgiftsfriePlasser": 0,
-                "antallLadeplasser": 2,
-                "merknadLadeplasser": null,
-                "antallForflytningshemmede": 2,
-                "vurderingForflytningshemmede": "Iht parkeringsforskriften § 62 er det foretatt følgende vurdering i forbindelse med etablering av vilkårsparkering på det angitte område. Det er anlagt 2 HC plasser uten tidsbegrensning. Antall HC plasser bygger på lokal kunnskap knyttet til bruken av disse plassene. Samlet sett tilfredsstiller Aimo Park kravet etter § 61. Parkeringsområdet er ikke universelt utformet per dags dato, men HC plasser gis best mulig plassering sett i forhold til tilbudet plassene er ment å betjene. Korrekt tilpasning av str. på HC plasser er utført. Anlegget iht. § 63 og normale plasser gis alminnelig lengde for å optimalisere arealbruken og for å kunne sikre plassene en mest optimal plassering sett i forhold til tilbudet plassene er ment å betjene. Dette gjøres ved at man på annen måte sikrer tilgjengelighet for side og bakmontert rullestolheis ut mot manøvreringsareal. \nAimo Parks vurdering er at det er tilstrekkelig antall plasser for ladbar motorvogn.\n",
-                "aktiveringstidspunkt": "2022-05-05T10:51:20Z",
-                "sistEndret": "2022-05-05T10:51:20Z",
-                "skiltplanId": 75613,
-                "links": [
-                    {
-                        "rel": "self",
-                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/52003"
-                    },
-                    {
-                        "rel": "skiltplan",
-                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/52003/versjon/1/skiltplan/75613/skiltplan"
-                    }
-                ],
-                "versjonsnummer": 1,
-                "sluttidspunkt": "2024-10-08T12:37:46Z",
-                "opplastetVurderingId": 0,
-                "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
                 "handhever": null
             }
