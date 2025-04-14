@@ -686,7 +686,7 @@
                 "Husnummer": "23",
                 "Bokstav": null,
                 "Type": 908,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -33890.84918909136,
@@ -1458,6 +1458,40 @@
                 "y": 6559382.61243491,
                 "latitude": 58.84052374475689,
                 "longitude": 5.729902033676638
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Pumptrack Gamlaverket Park",
+                "Url": null,
+                "Gatenavn": "Roald Amundsens gate",
+                "Husnummer": "14",
+                "Bokstav": null,
+                "Type": 908,
+                "Eierform": 1
+            },
+            "geometry": {
+                "x": -32950.84556780907,
+                "y": 6561288.949060273,
+                "latitude": 58.858666738307996,
+                "longitude": 5.742573083098611
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Skatepark i Gamlaverket Park",
+                "Url": null,
+                "Gatenavn": "Roald Amundsens gate",
+                "Husnummer": "14",
+                "Bokstav": null,
+                "Type": 906,
+                "Eierform": 1
+            },
+            "geometry": {
+                "x": -32982.45238970569,
+                "y": 6561351.969073238,
+                "latitude": 58.85918625019835,
+                "longitude": 5.741881898881079
             }
         }
     ]
