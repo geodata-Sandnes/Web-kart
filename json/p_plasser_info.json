@@ -2076,9 +2076,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 1,
             "vurderingForflytningshemmede": "Parkeringsplassen har ikke ladepunk da det er flere ladepunkter i nærheten. Det er lagt opp til 1 hc-plass, da parkeringsplassen ligger i tilknytning til parkeringshus hvor det er mange hc- plasser.",
-            "aktiveringstidspunkt": "2024-08-23T10:35:04Z",
-            "sistEndret": "2024-08-23T10:35:04Z",
-            "skiltplanId": 140632,
+            "aktiveringstidspunkt": "2025-04-23T14:15:00Z",
+            "sistEndret": "2025-04-23T14:15:00Z",
+            "skiltplanId": 172405,
             "links": [
                 {
                     "rel": "self",
@@ -2086,10 +2086,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/62109/versjon/6/skiltplan/140632/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/62109/versjon/7/skiltplan/172405/skiltplan"
                 }
             ],
-            "versjonsnummer": 6,
+            "versjonsnummer": 7,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -2252,6 +2252,38 @@
                 ],
                 "versjonsnummer": 5,
                 "sluttidspunkt": "2024-08-23T10:35:04Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "A102 Vågsgata 4",
+                "referanse": null,
+                "adresse": "Vågsgata 4",
+                "postnummer": "4306",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 19,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 1,
+                "vurderingForflytningshemmede": "Parkeringsplassen har ikke ladepunk da det er flere ladepunkter i nærheten. Det er lagt opp til 1 hc-plass, da parkeringsplassen ligger i tilknytning til parkeringshus hvor det er mange hc- plasser.",
+                "aktiveringstidspunkt": "2024-08-23T10:35:04Z",
+                "sistEndret": "2024-08-23T10:35:04Z",
+                "skiltplanId": 140632,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/62109"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/62109/versjon/6/skiltplan/140632/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 6,
+                "sluttidspunkt": "2025-04-23T14:15:00Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
@@ -6351,6 +6383,48 @@
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
+    },
+    {
+        "id": 101996,
+        "parkeringstilbyderId": 2422,
+        "parkeringstilbyderNavn": "SANDNES KOMMUNE",
+        "parkeringstilbyderOrganisasjonsnummer": "964965137",
+        "breddegrad": 58.848826,
+        "lengdegrad": 5.730826,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "St. Olavs gate 15 min",
+            "referanse": null,
+            "adresse": "St. Olavs gate",
+            "postnummer": "4319",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 16,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 0,
+            "vurderingForflytningshemmede": "Korttidsparkering til Fastfood restauranter.\n",
+            "aktiveringstidspunkt": "2025-05-09T06:32:07Z",
+            "sistEndret": "2025-05-09T06:32:07Z",
+            "skiltplanId": 177562,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/101996"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/101996/versjon/1/skiltplan/177562/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "LANGS_KJOREBANE",
             "innfartsparkering": "NEI",
             "handhever": null
         },
