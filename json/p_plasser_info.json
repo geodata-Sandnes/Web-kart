@@ -798,48 +798,6 @@
         ]
     },
     {
-        "id": 40074,
-        "parkeringstilbyderId": 1221,
-        "parkeringstilbyderNavn": "SANDNES PARKERINGSDRIFT AS",
-        "parkeringstilbyderOrganisasjonsnummer": "990201498",
-        "breddegrad": 58.860876,
-        "lengdegrad": 5.742224,
-        "deaktivert": null,
-        "aktivVersjon": {
-            "navn": "Gandsfjord borettslag.",
-            "referanse": "Private parkeringsplass",
-            "adresse": "Roald Amundsens gate 28B",
-            "postnummer": "4307",
-            "poststed": "SANDNES",
-            "antallAvgiftsbelagtePlasser": 0,
-            "antallAvgiftsfriePlasser": 118,
-            "antallLadeplasser": 4,
-            "merknadLadeplasser": null,
-            "antallForflytningshemmede": 9,
-            "vurderingForflytningshemmede": "P- plassen er reservert dor beboere og deres gjester.",
-            "aktiveringstidspunkt": "2021-06-01T07:00:23Z",
-            "sistEndret": "2021-06-01T07:00:23Z",
-            "skiltplanId": 56680,
-            "links": [
-                {
-                    "rel": "self",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/40074"
-                },
-                {
-                    "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/40074/versjon/1/skiltplan/56680/skiltplan"
-                }
-            ],
-            "versjonsnummer": 1,
-            "sluttidspunkt": null,
-            "opplastetVurderingId": 0,
-            "typeParkeringsomrade": "AVGRENSET_OMRADE",
-            "innfartsparkering": "NEI",
-            "handhever": null
-        },
-        "historiskeVersjoner": []
-    },
-    {
         "id": 59662,
         "parkeringstilbyderId": 1221,
         "parkeringstilbyderNavn": "SANDNES PARKERINGSDRIFT AS",
@@ -2474,6 +2432,48 @@
         ]
     },
     {
+        "id": 102563,
+        "parkeringstilbyderId": 1221,
+        "parkeringstilbyderNavn": "SANDNES PARKERINGSDRIFT AS",
+        "parkeringstilbyderOrganisasjonsnummer": "990201498",
+        "breddegrad": 58.833901,
+        "lengdegrad": 5.731889,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Obs Bygg",
+            "referanse": null,
+            "adresse": "Hoveveien",
+            "postnummer": "4306",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 88,
+            "antallLadeplasser": 10,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 2,
+            "vurderingForflytningshemmede": "Kundeparkering til Obs Bygg. Det er opparbeidet 2 HC-plasser. Det er også 10 ladeplasser.",
+            "aktiveringstidspunkt": "2025-05-26T16:00:07Z",
+            "sistEndret": "2025-05-26T16:00:07Z",
+            "skiltplanId": 179859,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102563"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102563/versjon/1/skiltplan/179859/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
+    },
+    {
         "id": 90929,
         "parkeringstilbyderId": 1221,
         "parkeringstilbyderNavn": "SANDNES PARKERINGSDRIFT AS",
@@ -3229,6 +3229,48 @@
                 "handhever": null
             }
         ]
+    },
+    {
+        "id": 102458,
+        "parkeringstilbyderId": 121,
+        "parkeringstilbyderNavn": "APCOA NORWAY AS",
+        "parkeringstilbyderOrganisasjonsnummer": "929292065",
+        "breddegrad": 58.854274,
+        "lengdegrad": 5.738163,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Langgata 59",
+            "referanse": "3852",
+            "adresse": "Langgata 59",
+            "postnummer": "4306",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 21,
+            "antallAvgiftsfriePlasser": 7,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": "1 lader tilgjengelig, men denne er reservert for Sandnesposten. Ingen øvrige tilgjengelige for allmennheten.",
+            "antallForflytningshemmede": 1,
+            "vurderingForflytningshemmede": "1 plass er forbeholdt for forflytningshemmede med kommunal p-tillatelse. Denne er lokalisert midt på rekka mot bygg, og er merket opp i forskriftsmessig bredde 4.5 meter. Plassering er god med tanke på  adkomst til bygget ved siden av.",
+            "aktiveringstidspunkt": "2025-05-21T13:20:23Z",
+            "sistEndret": "2025-05-21T13:20:23Z",
+            "skiltplanId": 179371,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102458"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102458/versjon/1/skiltplan/179371/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
     },
     {
         "id": 96416,
@@ -4675,6 +4717,48 @@
                 {
                     "rel": "skiltplan",
                     "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72211/versjon/1/skiltplan/113571/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "LANGS_KJOREBANE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
+    },
+    {
+        "id": 102419,
+        "parkeringstilbyderId": 2422,
+        "parkeringstilbyderNavn": "SANDNES KOMMUNE",
+        "parkeringstilbyderOrganisasjonsnummer": "964965137",
+        "breddegrad": 58.828648,
+        "lengdegrad": 5.820173,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Sygnaveien",
+            "referanse": null,
+            "adresse": "Sygnaveien",
+            "postnummer": "4337",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 8,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 0,
+            "vurderingForflytningshemmede": "Parkering til gjester. Det er ikke opparbeidet HC-plasser eller lade plasser da dette ikke anses som nødvendig",
+            "aktiveringstidspunkt": "2025-05-20T17:48:28Z",
+            "sistEndret": "2025-05-20T17:48:28Z",
+            "skiltplanId": 179302,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102419"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102419/versjon/1/skiltplan/179302/skiltplan"
                 }
             ],
             "versjonsnummer": 1,
@@ -10680,6 +10764,48 @@
                 {
                     "rel": "skiltplan",
                     "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/80722/versjon/1/skiltplan/127528/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
+    },
+    {
+        "id": 102738,
+        "parkeringstilbyderId": 2422,
+        "parkeringstilbyderNavn": "SANDNES KOMMUNE",
+        "parkeringstilbyderOrganisasjonsnummer": "964965137",
+        "breddegrad": 58.828325,
+        "lengdegrad": 5.725874,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Jonashagen",
+            "referanse": null,
+            "adresse": "Jonashagen ",
+            "postnummer": "4320",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 3,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 0,
+            "vurderingForflytningshemmede": "Korttidsparkering til beboere. 30 min.\nDet er ikke opparbeidet HC-plasser eller ladeplasser da dette ikke ses som nødvendig",
+            "aktiveringstidspunkt": "2025-06-02T08:19:28Z",
+            "sistEndret": "2025-06-02T08:19:28Z",
+            "skiltplanId": 180429,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102738"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/102738/versjon/1/skiltplan/180429/skiltplan"
                 }
             ],
             "versjonsnummer": 1,
