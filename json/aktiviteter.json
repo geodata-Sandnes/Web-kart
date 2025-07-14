@@ -1493,6 +1493,23 @@
                 "latitude": 58.85918625019835,
                 "longitude": 5.741881898881079
             }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandvolleybane Figgjo",
+                "Url": null,
+                "Gatenavn": "Holane",
+                "Husnummer": "3",
+                "Bokstav": null,
+                "Type": 911,
+                "Eierform": 9
+            },
+            "geometry": {
+                "x": -29973.621761883842,
+                "y": 6552915.8943071775,
+                "latitude": 58.78810786897633,
+                "longitude": 5.8133448968512935
+            }
         }
     ]
 }
