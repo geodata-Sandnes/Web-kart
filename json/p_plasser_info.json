@@ -5215,11 +5215,11 @@
             "antallAvgiftsfriePlasser": 40,
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
-            "antallForflytningshemmede": 0,
-            "vurderingForflytningshemmede": "Området er uoppmerket, og det er god anledning for HC til å finne egnede plasser med god adkomst til sidedør eller bakdør. Det er ikke meldt behov for egne skiltede HC-plasser, og derved er behovet vurdert dekket. Men det er enkelt å få til dersom slik behov skulle oppstå. Det er bedriftsøkonomisk uforsvarlig å sette opp ladestasjon.",
-            "aktiveringstidspunkt": "2022-02-17T09:53:56Z",
-            "sistEndret": "2022-02-17T09:53:56Z",
-            "skiltplanId": 38747,
+            "antallForflytningshemmede": 2,
+            "vurderingForflytningshemmede": "Området er uoppmerket. Det er 2 plasser til HC-kjøretøy. Det er ikke satt opp ladet plasser da dette er en parkering til badeplass eller turgåere.",
+            "aktiveringstidspunkt": "2025-07-29T06:40:51Z",
+            "sistEndret": "2025-07-29T06:40:51Z",
+            "skiltplanId": 185294,
             "links": [
                 {
                     "rel": "self",
@@ -5227,10 +5227,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/28720/versjon/2/skiltplan/38747/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/28720/versjon/3/skiltplan/185294/skiltplan"
                 }
             ],
-            "versjonsnummer": 2,
+            "versjonsnummer": 3,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -5265,6 +5265,38 @@
                 ],
                 "versjonsnummer": 1,
                 "sluttidspunkt": "2022-02-17T09:28:20Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "Tengesdalsvannet",
+                "referanse": null,
+                "adresse": "Høleveien",
+                "postnummer": "4308",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 40,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Området er uoppmerket, og det er god anledning for HC til å finne egnede plasser med god adkomst til sidedør eller bakdør. Det er ikke meldt behov for egne skiltede HC-plasser, og derved er behovet vurdert dekket. Men det er enkelt å få til dersom slik behov skulle oppstå. Det er bedriftsøkonomisk uforsvarlig å sette opp ladestasjon.",
+                "aktiveringstidspunkt": "2022-02-17T09:53:56Z",
+                "sistEndret": "2022-02-17T09:53:56Z",
+                "skiltplanId": 38747,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/28720"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/28720/versjon/2/skiltplan/38747/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 2,
+                "sluttidspunkt": "2025-07-29T06:40:51Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
@@ -5509,15 +5541,15 @@
             "adresse": "Vågsgata ",
             "postnummer": "4306",
             "poststed": "SANDNES",
-            "antallAvgiftsbelagtePlasser": 43,
+            "antallAvgiftsbelagtePlasser": 40,
             "antallAvgiftsfriePlasser": 0,
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 3,
             "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er 3 HC-plasser. Det er ikke ladeplasser, da dette finnes ikke langt fra p-plassen.",
-            "aktiveringstidspunkt": "2024-02-27T08:29:23Z",
-            "sistEndret": "2024-02-27T08:29:23Z",
-            "skiltplanId": 127529,
+            "aktiveringstidspunkt": "2025-07-24T15:00:44Z",
+            "sistEndret": "2025-07-24T15:00:44Z",
+            "skiltplanId": 185124,
             "links": [
                 {
                     "rel": "self",
@@ -5525,10 +5557,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72252/versjon/3/skiltplan/127529/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72252/versjon/4/skiltplan/185124/skiltplan"
                 }
             ],
-            "versjonsnummer": 3,
+            "versjonsnummer": 4,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "LANGS_KJOREBANE",
@@ -5595,6 +5627,38 @@
                 ],
                 "versjonsnummer": 2,
                 "sluttidspunkt": "2024-02-27T08:29:23Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "A43 Vågsgata",
+                "referanse": null,
+                "adresse": "Vågsgata ",
+                "postnummer": "4306",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 43,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 3,
+                "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er 3 HC-plasser. Det er ikke ladeplasser, da dette finnes ikke langt fra p-plassen.",
+                "aktiveringstidspunkt": "2024-02-27T08:29:23Z",
+                "sistEndret": "2024-02-27T08:29:23Z",
+                "skiltplanId": 127529,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72252"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/72252/versjon/3/skiltplan/127529/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 3,
+                "sluttidspunkt": "2025-07-24T15:00:44Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "LANGS_KJOREBANE",
                 "innfartsparkering": "NEI",
@@ -6172,9 +6236,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 0,
             "vurderingForflytningshemmede": "Korttidsparkering til Fastfood restauranter.\n",
-            "aktiveringstidspunkt": "2025-05-09T06:32:07Z",
-            "sistEndret": "2025-05-09T06:32:07Z",
-            "skiltplanId": 177562,
+            "aktiveringstidspunkt": "2025-07-30T17:22:20Z",
+            "sistEndret": "2025-07-30T17:22:20Z",
+            "skiltplanId": 185412,
             "links": [
                 {
                     "rel": "self",
@@ -6182,17 +6246,50 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/101996/versjon/1/skiltplan/177562/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/101996/versjon/2/skiltplan/185412/skiltplan"
                 }
             ],
-            "versjonsnummer": 1,
+            "versjonsnummer": 2,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "LANGS_KJOREBANE",
             "innfartsparkering": "NEI",
             "handhever": null
         },
-        "historiskeVersjoner": []
+        "historiskeVersjoner": [
+            {
+                "navn": "St. Olavs gate 15 min",
+                "referanse": null,
+                "adresse": "St. Olavs gate",
+                "postnummer": "4319",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 16,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Korttidsparkering til Fastfood restauranter.\n",
+                "aktiveringstidspunkt": "2025-05-09T06:32:07Z",
+                "sistEndret": "2025-05-09T06:32:07Z",
+                "skiltplanId": 177562,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/101996"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/101996/versjon/1/skiltplan/177562/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 1,
+                "sluttidspunkt": "2025-07-30T17:22:20Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            }
+        ]
     },
     {
         "id": 71791,
@@ -6997,20 +7094,20 @@
         "lengdegrad": 5.730153,
         "deaktivert": null,
         "aktivVersjon": {
-            "navn": "Møllekvartalet",
+            "navn": "Jærveien",
             "referanse": null,
-            "adresse": "Jærveien 3",
+            "adresse": "Jærveien ",
             "postnummer": "4319",
             "poststed": "SANDNES",
             "antallAvgiftsbelagtePlasser": 0,
-            "antallAvgiftsfriePlasser": 5,
+            "antallAvgiftsfriePlasser": 9,
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
-            "antallForflytningshemmede": 0,
-            "vurderingForflytningshemmede": "Dette er en korttidsparkering. Det er ikke behov for HC-plasser. Er flere HC-plasser rett over gaten. ",
-            "aktiveringstidspunkt": "2022-12-05T14:05:20Z",
-            "sistEndret": "2022-12-05T14:05:20Z",
-            "skiltplanId": 91120,
+            "antallForflytningshemmede": 1,
+            "vurderingForflytningshemmede": "Korttidsparkering til forskjellige næringslokaler. Det er en HC-plass.\nDet er ikke behov for ladeplasser her.",
+            "aktiveringstidspunkt": "2025-07-30T17:39:44Z",
+            "sistEndret": "2025-07-30T17:39:44Z",
+            "skiltplanId": 185413,
             "links": [
                 {
                     "rel": "self",
@@ -7018,10 +7115,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/60073/versjon/2/skiltplan/91120/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/60073/versjon/3/skiltplan/185413/skiltplan"
                 }
             ],
-            "versjonsnummer": 2,
+            "versjonsnummer": 3,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "LANGS_KJOREBANE",
@@ -7056,6 +7153,38 @@
                 ],
                 "versjonsnummer": 1,
                 "sluttidspunkt": "2022-12-05T14:05:20Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "JA",
+                "handhever": null
+            },
+            {
+                "navn": "Møllekvartalet",
+                "referanse": null,
+                "adresse": "Jærveien 3",
+                "postnummer": "4319",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 5,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Dette er en korttidsparkering. Det er ikke behov for HC-plasser. Er flere HC-plasser rett over gaten. ",
+                "aktiveringstidspunkt": "2022-12-05T14:05:20Z",
+                "sistEndret": "2022-12-05T14:05:20Z",
+                "skiltplanId": 91120,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/60073"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/60073/versjon/2/skiltplan/91120/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 2,
+                "sluttidspunkt": "2025-07-30T17:39:44Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "LANGS_KJOREBANE",
                 "innfartsparkering": "JA",
@@ -8206,6 +8335,145 @@
                 ],
                 "versjonsnummer": 1,
                 "sluttidspunkt": "2024-01-03T13:57:27Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            }
+        ]
+    },
+    {
+        "id": 67794,
+        "parkeringstilbyderId": 2422,
+        "parkeringstilbyderNavn": "SANDNES KOMMUNE",
+        "parkeringstilbyderOrganisasjonsnummer": "964965137",
+        "breddegrad": 58.853029,
+        "lengdegrad": 5.73707,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "A3 St. Olavs gate",
+            "referanse": null,
+            "adresse": null,
+            "postnummer": "4307",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 6,
+            "antallAvgiftsfriePlasser": 0,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 0,
+            "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er 2 p-plasser med 15 min og 4 plasser med 2 timer. Det er ikke HC-plasser eller ladeplasser. Dette finnes ikke så langt fra p-plassen.",
+            "aktiveringstidspunkt": "2025-07-24T14:38:12Z",
+            "sistEndret": "2025-07-24T14:38:12Z",
+            "skiltplanId": 123870,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794/versjon/4/skiltplan/123870/skiltplan"
+                }
+            ],
+            "versjonsnummer": 4,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "LANGS_KJOREBANE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": [
+            {
+                "navn": "A 3 St. Olavs gate",
+                "referanse": null,
+                "adresse": null,
+                "postnummer": "4307",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 14,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er 6 p-plasser med 15 min og 8 plasser med 2 timer. Det er ikke HC-plasser eller ladeplasser. Dette finnes ikke så langt fra p-plassen.",
+                "aktiveringstidspunkt": "2023-06-08T09:20:35Z",
+                "sistEndret": "2023-06-08T09:20:35Z",
+                "skiltplanId": 107294,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794/versjon/1/skiltplan/107294/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 1,
+                "sluttidspunkt": "2023-08-23T06:52:41Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "A3 St. Olavs gate",
+                "referanse": null,
+                "adresse": null,
+                "postnummer": "4307",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 6,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er 2 p-plasser med 15 min og 4 plasser med 2 timer. Det er ikke HC-plasser eller ladeplasser. Dette finnes ikke så langt fra p-plassen.",
+                "aktiveringstidspunkt": "2023-08-23T06:52:41Z",
+                "sistEndret": "2023-08-23T06:52:41Z",
+                "skiltplanId": 112931,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794/versjon/2/skiltplan/112931/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 2,
+                "sluttidspunkt": "2024-01-11T08:30:24Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "LANGS_KJOREBANE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "A3 St. Olavs gate",
+                "referanse": null,
+                "adresse": null,
+                "postnummer": "4307",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 6,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Parkering til Sandnes Sentrum. Det er 2 p-plasser med 15 min og 4 plasser med 2 timer. Det er ikke HC-plasser eller ladeplasser. Dette finnes ikke så langt fra p-plassen.",
+                "aktiveringstidspunkt": "2024-01-11T08:30:24Z",
+                "sistEndret": "2024-01-11T08:30:24Z",
+                "skiltplanId": 123870,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/67794/versjon/3/skiltplan/123870/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 3,
+                "sluttidspunkt": "2024-12-05T11:59:29Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "LANGS_KJOREBANE",
                 "innfartsparkering": "NEI",
@@ -16217,6 +16485,48 @@
                 {
                     "rel": "skiltplan",
                     "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/98836/versjon/1/skiltplan/162065/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
+    },
+    {
+        "id": 104984,
+        "parkeringstilbyderId": 481,
+        "parkeringstilbyderNavn": "ONEPARK AS AVD HOVEDKONTOR",
+        "parkeringstilbyderOrganisasjonsnummer": "999538959",
+        "breddegrad": 58.849413,
+        "lengdegrad": 5.739627,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Elveparken Sandnes",
+            "referanse": "Holbergsgate 15-19",
+            "adresse": "Holbergs gate 15",
+            "postnummer": "4306",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 250,
+            "antallAvgiftsfriePlasser": 0,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 8,
+            "vurderingForflytningshemmede": "God dekning av HC plasser. Plass til Side og bakheis",
+            "aktiveringstidspunkt": "2025-08-04T13:18:17Z",
+            "sistEndret": "2025-08-04T13:18:17Z",
+            "skiltplanId": 185722,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/104984"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/104984/versjon/1/skiltplan/185722/skiltplan"
                 }
             ],
             "versjonsnummer": 1,
