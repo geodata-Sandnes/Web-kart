@@ -1510,6 +1510,23 @@
                 "latitude": 58.78810786897633,
                 "longitude": 5.8133448968512935
             }
+        },
+        {
+            "attributes": {
+                "Navn": "Discgolfbane Vagle",
+                "Url": null,
+                "Gatenavn": "Kvernelandsveien",
+                "Husnummer": "108",
+                "Bokstav": null,
+                "Type": 901,
+                "Eierform": null
+            },
+            "geometry": {
+                "x": -34512.02946280781,
+                "y": 6555869.69283773,
+                "latitude": 58.80870077517091,
+                "longitude": 5.728814244969579
+            }
         }
     ]
 }
