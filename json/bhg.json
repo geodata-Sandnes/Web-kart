@@ -1158,25 +1158,6 @@
         },
         {
             "attributes": {
-                "OBJECTID": 65,
-                "Navn": "Læringsverkstedet Strutsen naturbarnehage",
-                "Url": "https://laringsverkstedet.no/barnehage/strutsen-et-pedagogisk-barnesenter",
-                "Gatenavn": "Svebastadveien",
-                "Husnummer": "68",
-                "Bokstav": null,
-                "Type": 100,
-                "Eierform": 2,
-                "Filter": 2
-            },
-            "geometry": {
-                "x": -32512.973445909098,
-                "y": 6558639.6933840625,
-                "latitude": 58.83572471007304,
-                "longitude": 5.756377982527919
-            }
-        },
-        {
-            "attributes": {
                 "OBJECTID": 66,
                 "Navn": "Trollhaugen foreldrelagsbarnehage SA",
                 "Url": "https://www.minbarnehage.no/trollhaugen",
