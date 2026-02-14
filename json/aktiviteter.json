@@ -57,7 +57,7 @@
                 "Husnummer": "100",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -31463.05965089437,
@@ -91,7 +91,7 @@
                 "Husnummer": "17",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -30262.326918365783,
@@ -142,7 +142,7 @@
                 "Husnummer": "403",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 2
             },
             "geometry": {
                 "x": -38208.038137997035,
@@ -210,7 +210,7 @@
                 "Husnummer": "158",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -9945.573347027297,
@@ -227,7 +227,7 @@
                 "Husnummer": "27",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -34173.022185030975,
@@ -244,7 +244,7 @@
                 "Husnummer": "23",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -33132.15382184426,
@@ -346,7 +346,7 @@
                 "Husnummer": "19",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -31185.785425511538,
@@ -1298,7 +1298,7 @@
                 "Husnummer": "7",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -33578.28399313835,
@@ -1315,7 +1315,7 @@
                 "Husnummer": "45",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -34827.86501821666,
@@ -1332,7 +1332,7 @@
                 "Husnummer": "3",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -32411.863544484717,
@@ -1349,7 +1349,7 @@
                 "Husnummer": "47",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -33904.11654563167,
@@ -1366,7 +1366,7 @@
                 "Husnummer": "14",
                 "Bokstav": "A",
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -32798.12059744622,
@@ -1383,7 +1383,7 @@
                 "Husnummer": "9",
                 "Bokstav": null,
                 "Type": 201,
-                "Eierform": null
+                "Eierform": 1
             },
             "geometry": {
                 "x": -26031.01030370372,
