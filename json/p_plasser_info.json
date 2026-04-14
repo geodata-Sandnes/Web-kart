@@ -13,15 +13,15 @@
             "adresse": "Gjesdalbakken 9",
             "postnummer": "4306",
             "poststed": "SANDNES",
-            "antallAvgiftsbelagtePlasser": 0,
-            "antallAvgiftsfriePlasser": 46,
+            "antallAvgiftsbelagtePlasser": 30,
+            "antallAvgiftsfriePlasser": 16,
             "antallLadeplasser": 0,
             "merknadLadeplasser": "Ingen ladestasjon, ikke behov. ",
             "antallForflytningshemmede": 4,
             "vurderingForflytningshemmede": "2 parkeringsplasser for forflytningshemmede  på øvre parkeringsplass nær hovedinngangen og 2 på nedre parkeringsplass. ",
-            "aktiveringstidspunkt": "2025-03-06T08:33:15Z",
-            "sistEndret": "2025-03-06T08:33:15Z",
-            "skiltplanId": 159183,
+            "aktiveringstidspunkt": "2026-04-02T10:20:00Z",
+            "sistEndret": "2026-03-26T09:22:59Z",
+            "skiltplanId": 211921,
             "links": [
                 {
                     "rel": "self",
@@ -29,17 +29,50 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/98316/versjon/1/skiltplan/159183/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/98316/versjon/2/skiltplan/211921/skiltplan"
                 }
             ],
-            "versjonsnummer": 1,
+            "versjonsnummer": 2,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
             "innfartsparkering": "NEI",
             "handhever": null
         },
-        "historiskeVersjoner": []
+        "historiskeVersjoner": [
+            {
+                "navn": "Gjesdalbakken 9 AS / Sparkjøp",
+                "referanse": null,
+                "adresse": "Gjesdalbakken 9",
+                "postnummer": "4306",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 46,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": "Ingen ladestasjon, ikke behov. ",
+                "antallForflytningshemmede": 4,
+                "vurderingForflytningshemmede": "2 parkeringsplasser for forflytningshemmede  på øvre parkeringsplass nær hovedinngangen og 2 på nedre parkeringsplass. ",
+                "aktiveringstidspunkt": "2025-03-06T08:33:15Z",
+                "sistEndret": "2025-03-06T08:33:15Z",
+                "skiltplanId": 159183,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/98316"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/98316/versjon/1/skiltplan/159183/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 1,
+                "sluttidspunkt": "2026-04-02T10:20:00Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            }
+        ]
     },
     {
         "id": 109645,
@@ -200,7 +233,7 @@
         "lengdegrad": 5.739105,
         "deaktivert": null,
         "aktivVersjon": {
-            "navn": "AMFI Vågen P-hus",
+            "navn": "Thon Senter Sandnes",
             "referanse": null,
             "adresse": "Elvegata 23",
             "postnummer": "4306",
@@ -211,9 +244,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 5,
             "vurderingForflytningshemmede": "Iht parkeringsforskriften § 62 er det foretatt følgende vurdering i forbindelse med etablering av vilkårsparkering på det angitte område: Det er anlagt 5 avgiftsbelagte HC plasser uten tidsbegrensning. Behovet for HC-plasser vurderes fortløpende. Parkeringsområdet er universelt utformet, og HC - plasser gis best mulig plassering sett i forhold til tilbudet plassene er ment å betjene. Korrekt tilpasning av str. på HC- plasser er utført. Betalingsløsning i app oppfyller kravene iht. § 32. Det finnes en universelt utformet betalingsautomat på området.",
-            "aktiveringstidspunkt": "2025-12-12T13:29:18Z",
-            "sistEndret": "2025-12-12T13:29:18Z",
-            "skiltplanId": 203587,
+            "aktiveringstidspunkt": "2026-03-23T13:56:47Z",
+            "sistEndret": "2026-03-23T13:56:47Z",
+            "skiltplanId": 211105,
             "links": [
                 {
                     "rel": "self",
@@ -221,10 +254,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/49516/versjon/7/skiltplan/203587/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/49516/versjon/8/skiltplan/211105/skiltplan"
                 }
             ],
-            "versjonsnummer": 7,
+            "versjonsnummer": 8,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "PARKERINGSHUS",
@@ -419,6 +452,38 @@
                 ],
                 "versjonsnummer": 6,
                 "sluttidspunkt": "2025-12-12T13:29:18Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "PARKERINGSHUS",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "AMFI Vågen P-hus",
+                "referanse": null,
+                "adresse": "Elvegata 23",
+                "postnummer": "4306",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 325,
+                "antallAvgiftsfriePlasser": 0,
+                "antallLadeplasser": 12,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 5,
+                "vurderingForflytningshemmede": "Iht parkeringsforskriften § 62 er det foretatt følgende vurdering i forbindelse med etablering av vilkårsparkering på det angitte område: Det er anlagt 5 avgiftsbelagte HC plasser uten tidsbegrensning. Behovet for HC-plasser vurderes fortløpende. Parkeringsområdet er universelt utformet, og HC - plasser gis best mulig plassering sett i forhold til tilbudet plassene er ment å betjene. Korrekt tilpasning av str. på HC- plasser er utført. Betalingsløsning i app oppfyller kravene iht. § 32. Det finnes en universelt utformet betalingsautomat på området.",
+                "aktiveringstidspunkt": "2025-12-12T13:29:18Z",
+                "sistEndret": "2025-12-12T13:29:18Z",
+                "skiltplanId": 203587,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/49516"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/49516/versjon/7/skiltplan/203587/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 7,
+                "sluttidspunkt": "2026-03-23T13:56:47Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "PARKERINGSHUS",
                 "innfartsparkering": "NEI",
@@ -841,6 +906,48 @@
                 "handhever": null
             }
         ]
+    },
+    {
+        "id": 116229,
+        "parkeringstilbyderId": 1221,
+        "parkeringstilbyderNavn": "SANDNES PARKERINGSDRIFT AS",
+        "parkeringstilbyderOrganisasjonsnummer": "990201498",
+        "breddegrad": 58.862469,
+        "lengdegrad": 5.757661,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Åsveien BBL",
+            "referanse": null,
+            "adresse": "Åsveien 118",
+            "postnummer": "4328",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 54,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": "området er et borettslag hvor deler av de parkerende har faste plasser. Behovet for ladeplasser er ivaretatt der.",
+            "antallForflytningshemmede": 8,
+            "vurderingForflytningshemmede": "Vurderingen er tatt av borettslaget ut fra deres behov for plasser.",
+            "aktiveringstidspunkt": "2026-03-22T23:00:00Z",
+            "sistEndret": "2026-03-19T11:21:08Z",
+            "skiltplanId": 210581,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/116229"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/116229/versjon/1/skiltplan/210581/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
     },
     {
         "id": 78342,
@@ -16771,14 +16878,14 @@
             "postnummer": "4313",
             "poststed": "SANDNES",
             "antallAvgiftsbelagtePlasser": 0,
-            "antallAvgiftsfriePlasser": 60,
+            "antallAvgiftsfriePlasser": 30,
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 1,
             "vurderingForflytningshemmede": "Det er korttidsparkering, 1 time på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. P-lomme er ca. 3x6 meter og gir god adkomst bak og ved siden.",
-            "aktiveringstidspunkt": "2024-12-05T06:59:52Z",
-            "sistEndret": "2024-12-05T06:59:52Z",
-            "skiltplanId": 149002,
+            "aktiveringstidspunkt": "2026-04-10T07:50:18Z",
+            "sistEndret": "2026-04-10T07:50:18Z",
+            "skiltplanId": 212781,
             "links": [
                 {
                     "rel": "self",
@@ -16786,10 +16893,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005/versjon/3/skiltplan/149002/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005/versjon/4/skiltplan/212781/skiltplan"
                 }
             ],
-            "versjonsnummer": 3,
+            "versjonsnummer": 4,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -16856,6 +16963,38 @@
                 ],
                 "versjonsnummer": 2,
                 "sluttidspunkt": "2024-12-05T06:59:52Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "Somaveien 2",
+                "referanse": "1415",
+                "adresse": "Somaveien 2",
+                "postnummer": "4313",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 60,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 1,
+                "vurderingForflytningshemmede": "Det er korttidsparkering, 1 time på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. P-lomme er ca. 3x6 meter og gir god adkomst bak og ved siden.",
+                "aktiveringstidspunkt": "2024-12-05T06:59:52Z",
+                "sistEndret": "2024-12-05T06:59:52Z",
+                "skiltplanId": 149002,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005/versjon/3/skiltplan/149002/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 3,
+                "sluttidspunkt": "2026-04-10T07:50:18Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
@@ -17306,14 +17445,14 @@
             "postnummer": "4306",
             "poststed": "SANDNES",
             "antallAvgiftsbelagtePlasser": 0,
-            "antallAvgiftsfriePlasser": 165,
+            "antallAvgiftsfriePlasser": 167,
             "antallLadeplasser": 12,
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 4,
             "vurderingForflytningshemmede": "Det er regulert maks 2 timer eller mot gyldig p-tillatelse på området. Det er tilrettelagt for 4 stk HC parkeringer som ligger nærmest innganger til selskaper som vist på skiltplan, dette sikrer enkel adkomst til byggets innganger. De er planlagt å opprette en til HC plass i nærmeste fremtid. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. Det er god plass i bakkant av oppmerket plass for bruk av rampe. P-lommer er av varierende størrelser og det er god adkomst med fri plass på sider eller i bakkant.\n\nDet er et området skiltet med parkering forbudt som gjelder hele døgnet, utenom to plasser som er reservert gjester.",
-            "aktiveringstidspunkt": "2026-03-09T10:07:59Z",
-            "sistEndret": "2026-03-09T10:07:59Z",
-            "skiltplanId": 209667,
+            "aktiveringstidspunkt": "2026-03-24T13:54:02Z",
+            "sistEndret": "2026-03-24T13:54:02Z",
+            "skiltplanId": 211661,
             "links": [
                 {
                     "rel": "self",
@@ -17321,10 +17460,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83909/versjon/5/skiltplan/209667/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83909/versjon/6/skiltplan/211661/skiltplan"
                 }
             ],
-            "versjonsnummer": 5,
+            "versjonsnummer": 6,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -17455,6 +17594,38 @@
                 ],
                 "versjonsnummer": 4,
                 "sluttidspunkt": "2026-03-09T10:07:59Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "Hoveveien 9-11",
+                "referanse": "1098",
+                "adresse": "Hoveveien 9-11",
+                "postnummer": "4306",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 165,
+                "antallLadeplasser": 12,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 4,
+                "vurderingForflytningshemmede": "Det er regulert maks 2 timer eller mot gyldig p-tillatelse på området. Det er tilrettelagt for 4 stk HC parkeringer som ligger nærmest innganger til selskaper som vist på skiltplan, dette sikrer enkel adkomst til byggets innganger. De er planlagt å opprette en til HC plass i nærmeste fremtid. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. Det er god plass i bakkant av oppmerket plass for bruk av rampe. P-lommer er av varierende størrelser og det er god adkomst med fri plass på sider eller i bakkant.\n\nDet er et området skiltet med parkering forbudt som gjelder hele døgnet, utenom to plasser som er reservert gjester.",
+                "aktiveringstidspunkt": "2026-03-09T10:07:59Z",
+                "sistEndret": "2026-03-09T10:07:59Z",
+                "skiltplanId": 209667,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83909"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83909/versjon/5/skiltplan/209667/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 5,
+                "sluttidspunkt": "2026-03-24T13:54:02Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
