@@ -18144,9 +18144,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 1,
             "vurderingForflytningshemmede": "Det er korttidsparkering, 30 minutter på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. Det er god plass i bakkant av oppmerket plass for bruk av rampe. P-lomme er ca. 4x6 meter og gir god adkomst.",
-            "aktiveringstidspunkt": "2026-06-08T13:48:23Z",
-            "sistEndret": "2026-06-08T13:48:23Z",
-            "skiltplanId": 226720,
+            "aktiveringstidspunkt": "2026-06-18T06:31:20Z",
+            "sistEndret": "2026-06-18T06:31:20Z",
+            "skiltplanId": 227583,
             "links": [
                 {
                     "rel": "self",
@@ -18154,10 +18154,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83925/versjon/4/skiltplan/226720/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83925/versjon/5/skiltplan/227583/skiltplan"
                 }
             ],
-            "versjonsnummer": 4,
+            "versjonsnummer": 5,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -18256,6 +18256,38 @@
                 ],
                 "versjonsnummer": 3,
                 "sluttidspunkt": "2026-06-08T13:48:23Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "Kiwi Jærveien",
+                "referanse": "1143 (Jærveien 4)",
+                "adresse": "Jærveien 4",
+                "postnummer": "4319",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 26,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 1,
+                "vurderingForflytningshemmede": "Det er korttidsparkering, 30 minutter på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. Det er god plass i bakkant av oppmerket plass for bruk av rampe. P-lomme er ca. 4x6 meter og gir god adkomst.",
+                "aktiveringstidspunkt": "2026-06-08T13:48:23Z",
+                "sistEndret": "2026-06-08T13:48:23Z",
+                "skiltplanId": 226720,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83925"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83925/versjon/4/skiltplan/226720/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 4,
+                "sluttidspunkt": "2026-06-18T06:31:20Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
@@ -18487,7 +18519,7 @@
         "deaktivert": null,
         "aktivVersjon": {
             "navn": "Svanholmen 11 (Forus Næringspark)",
-            "referanse": "1073",
+            "referanse": "1073 (Forus Næringspark)",
             "adresse": "Svanholmen 11",
             "postnummer": "4313",
             "poststed": "SANDNES",
@@ -18496,10 +18528,10 @@
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 0,
-            "vurderingForflytningshemmede": "Privat parkeringsplass til leietakere og ansatte mot gyldig parkeringsplass. Plasser til gjester er like ved å nærmere inngang til bygg.",
-            "aktiveringstidspunkt": "2024-12-16T09:33:46Z",
-            "sistEndret": "2024-12-16T09:33:46Z",
-            "skiltplanId": 149522,
+            "vurderingForflytningshemmede": "Delvis grus/asfalt plass med god plass.\nGratis parkering for HC, ingen HC plass etablert da dette finnes ved inngangspartier ved nabobyggene.",
+            "aktiveringstidspunkt": "2026-06-30T11:28:12Z",
+            "sistEndret": "2026-06-30T11:28:12Z",
+            "skiltplanId": 228792,
             "links": [
                 {
                     "rel": "self",
@@ -18507,17 +18539,50 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/94437/versjon/1/skiltplan/149522/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/94437/versjon/2/skiltplan/228792/skiltplan"
                 }
             ],
-            "versjonsnummer": 1,
+            "versjonsnummer": 2,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
             "innfartsparkering": "NEI",
             "handhever": null
         },
-        "historiskeVersjoner": []
+        "historiskeVersjoner": [
+            {
+                "navn": "Svanholmen 11 (Forus Næringspark)",
+                "referanse": "1073",
+                "adresse": "Svanholmen 11",
+                "postnummer": "4313",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 70,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 0,
+                "vurderingForflytningshemmede": "Privat parkeringsplass til leietakere og ansatte mot gyldig parkeringsplass. Plasser til gjester er like ved å nærmere inngang til bygg.",
+                "aktiveringstidspunkt": "2024-12-16T09:33:46Z",
+                "sistEndret": "2024-12-16T09:33:46Z",
+                "skiltplanId": 149522,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/94437"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/94437/versjon/1/skiltplan/149522/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 1,
+                "sluttidspunkt": "2026-06-30T11:28:12Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            }
+        ]
     },
     {
         "id": 83945,
