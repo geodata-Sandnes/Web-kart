@@ -18669,19 +18669,19 @@
         "deaktivert": null,
         "aktivVersjon": {
             "navn": "Åsveien 159 (Rema 1000 Aspervik)",
-            "referanse": "1211",
+            "referanse": "1211 ( Rema 1000 Aspervik)",
             "adresse": "Åsveien 159",
             "postnummer": "4328",
             "poststed": "SANDNES",
             "antallAvgiftsbelagtePlasser": 0,
-            "antallAvgiftsfriePlasser": 22,
+            "antallAvgiftsfriePlasser": 28,
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 1,
             "vurderingForflytningshemmede": "Det er korttidsparkering, 30 minutt på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. Det er god plass i bakkant av oppmerket plass for bruk av rampe. P-lomme er ca. 4x6 mtr og gir god adkomst.",
-            "aktiveringstidspunkt": "2024-10-22T05:40:54Z",
-            "sistEndret": "2024-10-22T05:40:54Z",
-            "skiltplanId": 145318,
+            "aktiveringstidspunkt": "2026-07-14T06:41:43Z",
+            "sistEndret": "2026-07-14T06:41:43Z",
+            "skiltplanId": 230123,
             "links": [
                 {
                     "rel": "self",
@@ -18689,10 +18689,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83946/versjon/2/skiltplan/145318/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83946/versjon/3/skiltplan/230123/skiltplan"
                 }
             ],
-            "versjonsnummer": 2,
+            "versjonsnummer": 3,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -18727,6 +18727,38 @@
                 ],
                 "versjonsnummer": 1,
                 "sluttidspunkt": "2024-10-22T05:40:54Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "Åsveien 159 (Rema 1000 Aspervik)",
+                "referanse": "1211",
+                "adresse": "Åsveien 159",
+                "postnummer": "4328",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 22,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 1,
+                "vurderingForflytningshemmede": "Det er korttidsparkering, 30 minutt på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. Det er god plass i bakkant av oppmerket plass for bruk av rampe. P-lomme er ca. 4x6 mtr og gir god adkomst.",
+                "aktiveringstidspunkt": "2024-10-22T05:40:54Z",
+                "sistEndret": "2024-10-22T05:40:54Z",
+                "skiltplanId": 145318,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83946"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/83946/versjon/2/skiltplan/145318/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 2,
+                "sluttidspunkt": "2026-07-14T06:41:43Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
