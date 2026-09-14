@@ -59,7 +59,7 @@
                 "OBJECTID": 1,
                 "Navn": "Åpen internasjonal kulturbarnehage",
                 "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/apen-internasjonal-kulturbarnehage/",
-                "Gatenavn": "Holbergsgate",
+                "Gatenavn": "Holbergs gate",
                 "Husnummer": "23",
                 "Bokstav": null,
                 "Type": 101,
@@ -251,7 +251,7 @@
                 "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager-i-sandnes/stangeland-barnehage/",
                 "Gatenavn": "Agneveien",
                 "Husnummer": "1",
-                "Bokstav": null,
+                "Bokstav": "C",
                 "Type": 100,
                 "Eierform": 1,
                 "Filter": 1
