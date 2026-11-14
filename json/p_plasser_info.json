@@ -17255,7 +17255,7 @@
         "deaktivert": null,
         "aktivVersjon": {
             "navn": "Somaveien 2",
-            "referanse": "1415",
+            "referanse": "1415 Europris (Somaveien 2)",
             "adresse": "Somaveien 2",
             "postnummer": "4313",
             "poststed": "SANDNES",
@@ -17265,9 +17265,9 @@
             "merknadLadeplasser": null,
             "antallForflytningshemmede": 1,
             "vurderingForflytningshemmede": "Det er korttidsparkering, 1 time på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. P-lomme er ca. 3x6 meter og gir god adkomst bak og ved siden.",
-            "aktiveringstidspunkt": "2026-04-10T07:50:18Z",
-            "sistEndret": "2026-04-10T07:50:18Z",
-            "skiltplanId": 212781,
+            "aktiveringstidspunkt": "2026-10-16T09:40:42Z",
+            "sistEndret": "2026-10-16T09:40:42Z",
+            "skiltplanId": 249844,
             "links": [
                 {
                     "rel": "self",
@@ -17275,10 +17275,10 @@
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005/versjon/4/skiltplan/212781/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005/versjon/5/skiltplan/249844/skiltplan"
                 }
             ],
-            "versjonsnummer": 4,
+            "versjonsnummer": 5,
             "sluttidspunkt": null,
             "opplastetVurderingId": 0,
             "typeParkeringsomrade": "AVGRENSET_OMRADE",
@@ -17377,6 +17377,38 @@
                 ],
                 "versjonsnummer": 3,
                 "sluttidspunkt": "2026-04-10T07:50:18Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            },
+            {
+                "navn": "Somaveien 2",
+                "referanse": "1415",
+                "adresse": "Somaveien 2",
+                "postnummer": "4313",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 0,
+                "antallAvgiftsfriePlasser": 30,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 1,
+                "vurderingForflytningshemmede": "Det er korttidsparkering, 1 time på området. Det er tilrettelagt for 1 stk HC parkering som ligger nærmest inngang til butikk som vist på skiltplan, dette sikrer enkel adkomst til byggets inngang. Dette vurderes som tilstrekkelig antall HC-plasser pr. d.d. P-lomme er ca. 3x6 meter og gir god adkomst bak og ved siden.",
+                "aktiveringstidspunkt": "2026-04-10T07:50:18Z",
+                "sistEndret": "2026-04-10T07:50:18Z",
+                "skiltplanId": 212781,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/84005/versjon/4/skiltplan/212781/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 4,
+                "sluttidspunkt": "2026-10-16T09:40:42Z",
                 "opplastetVurderingId": 0,
                 "typeParkeringsomrade": "AVGRENSET_OMRADE",
                 "innfartsparkering": "NEI",
@@ -17888,36 +17920,36 @@
         ]
     },
     {
-        "id": 122790,
+        "id": 126237,
         "parkeringstilbyderId": 148,
         "parkeringstilbyderNavn": "ROGALAND PARKERING AS",
         "parkeringstilbyderOrganisasjonsnummer": "993394378",
-        "breddegrad": 58.8264,
-        "lengdegrad": 5.714631,
+        "breddegrad": 58.857728,
+        "lengdegrad": 5.725225,
         "deaktivert": null,
         "aktivVersjon": {
-            "navn": "Ganddal Helsehus",
-            "referanse": null,
-            "adresse": "Olabakken 5",
-            "postnummer": "4322",
+            "navn": "Sandnes VGS",
+            "referanse": "1915 (Sandnes VGS.)",
+            "adresse": "Jønningsheiveien 45",
+            "postnummer": "4316",
             "poststed": "SANDNES",
-            "antallAvgiftsbelagtePlasser": 23,
-            "antallAvgiftsfriePlasser": 3,
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 34,
             "antallLadeplasser": 0,
             "merknadLadeplasser": null,
-            "antallForflytningshemmede": 3,
-            "vurderingForflytningshemmede": "Det er 3 plasser reservert forflytningshemmede, der 2 er rett ved inngang til helsehuset. Den siste er parkeringplassen lettest tilgjengelig gangstien til helsehus fra nederste parkeringsområdet. \n\nVi tenker dette dekker behovet for forflytningshemmede ved dette parkeringsområdet per d.d.",
-            "aktiveringstidspunkt": "2026-08-14T10:07:42Z",
-            "sistEndret": "2026-08-14T10:07:42Z",
-            "skiltplanId": 233144,
+            "antallForflytningshemmede": 2,
+            "vurderingForflytningshemmede": "2 plasser nærmest skolen, samt offentlige HC plasser rett over veien, dette anses som nok per dags dato.",
+            "aktiveringstidspunkt": "2026-10-16T09:58:51Z",
+            "sistEndret": "2026-10-16T09:58:51Z",
+            "skiltplanId": 249845,
             "links": [
                 {
                     "rel": "self",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/122790"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/126237"
                 },
                 {
                     "rel": "skiltplan",
-                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/122790/versjon/1/skiltplan/233144/skiltplan"
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/126237/versjon/1/skiltplan/249845/skiltplan"
                 }
             ],
             "versjonsnummer": 1,
@@ -17928,6 +17960,123 @@
             "handhever": null
         },
         "historiskeVersjoner": []
+    },
+    {
+        "id": 126257,
+        "parkeringstilbyderId": 148,
+        "parkeringstilbyderNavn": "ROGALAND PARKERING AS",
+        "parkeringstilbyderOrganisasjonsnummer": "993394378",
+        "breddegrad": 58.873529,
+        "lengdegrad": 5.724741,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "APAC Jæren AS",
+            "referanse": "1218 (APAC Jæren AS)",
+            "adresse": "Somaveien 2",
+            "postnummer": "4313",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 0,
+            "antallAvgiftsfriePlasser": 30,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 0,
+            "vurderingForflytningshemmede": "Det er HC-plass på parkeringsplassen som deles med Europris.\nDet er også offentlig HC plasser ved Lurabyen kjøpesenter.\n\nDette anses som nok per dags dato.",
+            "aktiveringstidspunkt": "2026-10-16T10:28:38Z",
+            "sistEndret": "2026-10-16T10:28:38Z",
+            "skiltplanId": 249847,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/126257"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/126257/versjon/1/skiltplan/249847/skiltplan"
+                }
+            ],
+            "versjonsnummer": 1,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": []
+    },
+    {
+        "id": 122790,
+        "parkeringstilbyderId": 148,
+        "parkeringstilbyderNavn": "ROGALAND PARKERING AS",
+        "parkeringstilbyderOrganisasjonsnummer": "993394378",
+        "breddegrad": 58.8264,
+        "lengdegrad": 5.714631,
+        "deaktivert": null,
+        "aktivVersjon": {
+            "navn": "Ganddal Helsehus",
+            "referanse": "1912 (Gandal Helsehus)",
+            "adresse": "Olabakken 5",
+            "postnummer": "4322",
+            "poststed": "SANDNES",
+            "antallAvgiftsbelagtePlasser": 23,
+            "antallAvgiftsfriePlasser": 3,
+            "antallLadeplasser": 0,
+            "merknadLadeplasser": null,
+            "antallForflytningshemmede": 3,
+            "vurderingForflytningshemmede": "Det er 3 plasser reservert forflytningshemmede, der 2 er rett ved inngang til helsehuset. Den siste er parkeringplassen lettest tilgjengelig gangstien til helsehus fra nederste parkeringsområdet. \n\nVi tenker dette dekker behovet for forflytningshemmede ved dette parkeringsområdet per d.d.",
+            "aktiveringstidspunkt": "2026-10-22T11:59:27Z",
+            "sistEndret": "2026-10-22T11:59:27Z",
+            "skiltplanId": 251289,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/122790"
+                },
+                {
+                    "rel": "skiltplan",
+                    "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/122790/versjon/2/skiltplan/251289/skiltplan"
+                }
+            ],
+            "versjonsnummer": 2,
+            "sluttidspunkt": null,
+            "opplastetVurderingId": 0,
+            "typeParkeringsomrade": "AVGRENSET_OMRADE",
+            "innfartsparkering": "NEI",
+            "handhever": null
+        },
+        "historiskeVersjoner": [
+            {
+                "navn": "Ganddal Helsehus",
+                "referanse": null,
+                "adresse": "Olabakken 5",
+                "postnummer": "4322",
+                "poststed": "SANDNES",
+                "antallAvgiftsbelagtePlasser": 23,
+                "antallAvgiftsfriePlasser": 3,
+                "antallLadeplasser": 0,
+                "merknadLadeplasser": null,
+                "antallForflytningshemmede": 3,
+                "vurderingForflytningshemmede": "Det er 3 plasser reservert forflytningshemmede, der 2 er rett ved inngang til helsehuset. Den siste er parkeringplassen lettest tilgjengelig gangstien til helsehus fra nederste parkeringsområdet. \n\nVi tenker dette dekker behovet for forflytningshemmede ved dette parkeringsområdet per d.d.",
+                "aktiveringstidspunkt": "2026-08-14T10:07:42Z",
+                "sistEndret": "2026-08-14T10:07:42Z",
+                "skiltplanId": 233144,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/122790"
+                    },
+                    {
+                        "rel": "skiltplan",
+                        "href": "https://parkreg-open.atlas.vegvesen.no/ws/no/vegvesen/veg/parkeringsomraade/parkeringsregisteret/v1/parkeringsomraade/122790/versjon/1/skiltplan/233144/skiltplan"
+                    }
+                ],
+                "versjonsnummer": 1,
+                "sluttidspunkt": "2026-10-22T11:59:27Z",
+                "opplastetVurderingId": 0,
+                "typeParkeringsomrade": "AVGRENSET_OMRADE",
+                "innfartsparkering": "NEI",
+                "handhever": null
+            }
+        ]
     },
     {
         "id": 83907,
